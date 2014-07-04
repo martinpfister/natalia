@@ -121,3 +121,30 @@ mod {
         3 = 0
     }
 }
+
+
+#-------------------------------------------------------------------------------
+#  Default form
+#-------------------------------------------------------------------------------
+mod.wizards {
+    newContentElement.wizardItems {
+        forms.elements {
+            mailform {
+                tt_content_defValues {
+                    bodytext (
+enctype = application/x-www-form-urlencoded
+method = post
+prefix = tx_form
+postProcessor {
+    1 = mail
+    1 {
+        recipientEmail =
+        senderEmail =
+    }
+}
+                    )
+                }
+            }
+        }
+    }
+}

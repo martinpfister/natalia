@@ -1666,7 +1666,7 @@ select {
   color: white;
 }
 /* line 119, ../sass/foundation/components/_alert-boxes.scss */
-.alert-box.alert {
+.alert-box.alert, input.alert-box[type="reset"] {
   background-color: #f04124;
   border-color: #de2d0f;
   color: white;
@@ -2298,7 +2298,7 @@ select {
 }
 
 /* line 186, ../sass/foundation/components/_buttons.scss */
-button, .button {
+button, .button, input[type="submit"], input[type="reset"] {
   border-style: solid;
   border-width: 0px;
   cursor: pointer;
@@ -2323,57 +2323,57 @@ button, .button {
   transition: background-color 300ms ease-out;
 }
 /* line 134, ../sass/foundation/components/_buttons.scss */
-button:hover, button:focus, .button:hover, .button:focus {
+button:hover, button:focus, .button:hover, input[type="submit"]:hover, input[type="reset"]:hover, .button:focus, input[type="submit"]:focus, input[type="reset"]:focus {
   background-color: #007095;
 }
 /* line 145, ../sass/foundation/components/_buttons.scss */
-button:hover, button:focus, .button:hover, .button:focus {
+button:hover, button:focus, .button:hover, input[type="submit"]:hover, input[type="reset"]:hover, .button:focus, input[type="submit"]:focus, input[type="reset"]:focus {
   color: white;
 }
 /* line 193, ../sass/foundation/components/_buttons.scss */
-button.secondary, .button.secondary {
+button.secondary, .button.secondary, input.secondary[type="submit"], input.secondary[type="reset"] {
   background-color: #e7e7e7;
   border-color: #b9b9b9;
   color: #333333;
 }
 /* line 134, ../sass/foundation/components/_buttons.scss */
-button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
+button.secondary:hover, button.secondary:focus, .button.secondary:hover, input.secondary[type="submit"]:hover, input.secondary[type="reset"]:hover, .button.secondary:focus, input.secondary[type="submit"]:focus, input.secondary[type="reset"]:focus {
   background-color: #b9b9b9;
 }
 /* line 140, ../sass/foundation/components/_buttons.scss */
-button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
+button.secondary:hover, button.secondary:focus, .button.secondary:hover, input.secondary[type="submit"]:hover, input.secondary[type="reset"]:hover, .button.secondary:focus, input.secondary[type="submit"]:focus, input.secondary[type="reset"]:focus {
   color: #333333;
 }
 /* line 194, ../sass/foundation/components/_buttons.scss */
-button.success, .button.success {
+button.success, .button.success, input.success[type="submit"], input.success[type="reset"] {
   background-color: #43ac6a;
   border-color: #368a55;
   color: white;
 }
 /* line 134, ../sass/foundation/components/_buttons.scss */
-button.success:hover, button.success:focus, .button.success:hover, .button.success:focus {
+button.success:hover, button.success:focus, .button.success:hover, input.success[type="submit"]:hover, input.success[type="reset"]:hover, .button.success:focus, input.success[type="submit"]:focus, input.success[type="reset"]:focus {
   background-color: #368a55;
 }
 /* line 145, ../sass/foundation/components/_buttons.scss */
-button.success:hover, button.success:focus, .button.success:hover, .button.success:focus {
+button.success:hover, button.success:focus, .button.success:hover, input.success[type="submit"]:hover, input.success[type="reset"]:hover, .button.success:focus, input.success[type="submit"]:focus, input.success[type="reset"]:focus {
   color: white;
 }
 /* line 195, ../sass/foundation/components/_buttons.scss */
-button.alert, .button.alert {
+button.alert, .button.alert, input.alert[type="submit"], input[type="reset"] {
   background-color: #f04124;
   border-color: #cf2a0e;
   color: white;
 }
 /* line 134, ../sass/foundation/components/_buttons.scss */
-button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus {
+button.alert:hover, button.alert:focus, .button.alert:hover, input.alert[type="submit"]:hover, input[type="reset"]:hover, .button.alert:focus, input.alert[type="submit"]:focus, input[type="reset"]:focus {
   background-color: #cf2a0e;
 }
 /* line 145, ../sass/foundation/components/_buttons.scss */
-button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus {
+button.alert:hover, button.alert:focus, .button.alert:hover, input.alert[type="submit"]:hover, input[type="reset"]:hover, .button.alert:focus, input.alert[type="submit"]:focus, input[type="reset"]:focus {
   color: white;
 }
 /* line 197, ../sass/foundation/components/_buttons.scss */
-button.large, .button.large {
+button.large, .button.large, input.large[type="submit"], input.large[type="reset"] {
   padding-top: 1.125rem;
   padding-right: 2.25rem;
   padding-bottom: 1.1875rem;
@@ -2381,7 +2381,7 @@ button.large, .button.large {
   font-size: 1.25rem;
 }
 /* line 198, ../sass/foundation/components/_buttons.scss */
-button.small, .button.small {
+button.small, .button.small, input.small[type="submit"], input.small[type="reset"] {
   padding-top: 0.875rem;
   padding-right: 1.75rem;
   padding-bottom: 0.9375rem;
@@ -2389,7 +2389,7 @@ button.small, .button.small {
   font-size: 0.8125rem;
 }
 /* line 199, ../sass/foundation/components/_buttons.scss */
-button.tiny, .button.tiny {
+button.tiny, .button.tiny, input.tiny[type="submit"], input.tiny[type="reset"] {
   padding-top: 0.625rem;
   padding-right: 1.25rem;
   padding-bottom: 0.6875rem;
@@ -2397,31 +2397,31 @@ button.tiny, .button.tiny {
   font-size: 0.6875rem;
 }
 /* line 200, ../sass/foundation/components/_buttons.scss */
-button.expand, .button.expand {
+button.expand, .button.expand, input.expand[type="submit"], input.expand[type="reset"] {
   padding-right: 0;
   padding-left: 0;
   width: 100%;
 }
 /* line 202, ../sass/foundation/components/_buttons.scss */
-button.left-align, .button.left-align {
+button.left-align, .button.left-align, input.left-align[type="submit"], input.left-align[type="reset"] {
   text-align: left;
   text-indent: 0.75rem;
 }
 /* line 203, ../sass/foundation/components/_buttons.scss */
-button.right-align, .button.right-align {
+button.right-align, .button.right-align, input.right-align[type="submit"], input.right-align[type="reset"] {
   text-align: right;
   padding-right: 0.75rem;
 }
 /* line 205, ../sass/foundation/components/_buttons.scss */
-button.radius, .button.radius {
+button.radius, .button.radius, input.radius[type="submit"], input.radius[type="reset"] {
   border-radius: 3px;
 }
 /* line 206, ../sass/foundation/components/_buttons.scss */
-button.round, .button.round {
+button.round, .button.round, input.round[type="submit"], input.round[type="reset"] {
   border-radius: 1000px;
 }
 /* line 208, ../sass/foundation/components/_buttons.scss */
-button.disabled, button[disabled], .button.disabled, .button[disabled] {
+button.disabled, button[disabled], .button.disabled, input.disabled[type="submit"], input.disabled[type="reset"], .button[disabled], input[disabled][type="submit"], input[disabled][type="reset"] {
   background-color: #008cba;
   border-color: #007095;
   color: white;
@@ -2430,19 +2430,19 @@ button.disabled, button[disabled], .button.disabled, .button[disabled] {
   box-shadow: none;
 }
 /* line 134, ../sass/foundation/components/_buttons.scss */
-button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
+button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, input.disabled[type="submit"]:hover, input.disabled[type="reset"]:hover, .button.disabled:focus, input.disabled[type="submit"]:focus, input.disabled[type="reset"]:focus, .button[disabled]:hover, input[disabled][type="submit"]:hover, input[disabled][type="reset"]:hover, .button[disabled]:focus, input[disabled][type="submit"]:focus, input[disabled][type="reset"]:focus {
   background-color: #007095;
 }
 /* line 145, ../sass/foundation/components/_buttons.scss */
-button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
+button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, input.disabled[type="submit"]:hover, input.disabled[type="reset"]:hover, .button.disabled:focus, input.disabled[type="submit"]:focus, input.disabled[type="reset"]:focus, .button[disabled]:hover, input[disabled][type="submit"]:hover, input[disabled][type="reset"]:hover, .button[disabled]:focus, input[disabled][type="submit"]:focus, input[disabled][type="reset"]:focus {
   color: white;
 }
 /* line 155, ../sass/foundation/components/_buttons.scss */
-button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
+button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, input.disabled[type="submit"]:hover, input.disabled[type="reset"]:hover, .button.disabled:focus, input.disabled[type="submit"]:focus, input.disabled[type="reset"]:focus, .button[disabled]:hover, input[disabled][type="submit"]:hover, input[disabled][type="reset"]:hover, .button[disabled]:focus, input[disabled][type="submit"]:focus, input[disabled][type="reset"]:focus {
   background-color: #008cba;
 }
 /* line 209, ../sass/foundation/components/_buttons.scss */
-button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, .button[disabled].secondary {
+button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, input.disabled.secondary[type="submit"], input.disabled.secondary[type="reset"], .button[disabled].secondary, input[disabled].secondary[type="submit"], input[disabled].secondary[type="reset"] {
   background-color: #e7e7e7;
   border-color: #b9b9b9;
   color: #333333;
@@ -2451,19 +2451,19 @@ button.disabled.secondary, button[disabled].secondary, .button.disabled.secondar
   box-shadow: none;
 }
 /* line 134, ../sass/foundation/components/_buttons.scss */
-button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
+button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, input.disabled.secondary[type="submit"]:hover, input.disabled.secondary[type="reset"]:hover, .button.disabled.secondary:focus, input.disabled.secondary[type="submit"]:focus, input.disabled.secondary[type="reset"]:focus, .button[disabled].secondary:hover, input[disabled].secondary[type="submit"]:hover, input[disabled].secondary[type="reset"]:hover, .button[disabled].secondary:focus, input[disabled].secondary[type="submit"]:focus, input[disabled].secondary[type="reset"]:focus {
   background-color: #b9b9b9;
 }
 /* line 140, ../sass/foundation/components/_buttons.scss */
-button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
+button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, input.disabled.secondary[type="submit"]:hover, input.disabled.secondary[type="reset"]:hover, .button.disabled.secondary:focus, input.disabled.secondary[type="submit"]:focus, input.disabled.secondary[type="reset"]:focus, .button[disabled].secondary:hover, input[disabled].secondary[type="submit"]:hover, input[disabled].secondary[type="reset"]:hover, .button[disabled].secondary:focus, input[disabled].secondary[type="submit"]:focus, input[disabled].secondary[type="reset"]:focus {
   color: #333333;
 }
 /* line 155, ../sass/foundation/components/_buttons.scss */
-button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
+button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, input.disabled.secondary[type="submit"]:hover, input.disabled.secondary[type="reset"]:hover, .button.disabled.secondary:focus, input.disabled.secondary[type="submit"]:focus, input.disabled.secondary[type="reset"]:focus, .button[disabled].secondary:hover, input[disabled].secondary[type="submit"]:hover, input[disabled].secondary[type="reset"]:hover, .button[disabled].secondary:focus, input[disabled].secondary[type="submit"]:focus, input[disabled].secondary[type="reset"]:focus {
   background-color: #e7e7e7;
 }
 /* line 210, ../sass/foundation/components/_buttons.scss */
-button.disabled.success, button[disabled].success, .button.disabled.success, .button[disabled].success {
+button.disabled.success, button[disabled].success, .button.disabled.success, input.disabled.success[type="submit"], input.disabled.success[type="reset"], .button[disabled].success, input[disabled].success[type="submit"], input[disabled].success[type="reset"] {
   background-color: #43ac6a;
   border-color: #368a55;
   color: white;
@@ -2472,19 +2472,19 @@ button.disabled.success, button[disabled].success, .button.disabled.success, .bu
   box-shadow: none;
 }
 /* line 134, ../sass/foundation/components/_buttons.scss */
-button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success:hover, .button[disabled].success:focus {
+button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, input.disabled.success[type="submit"]:hover, input.disabled.success[type="reset"]:hover, .button.disabled.success:focus, input.disabled.success[type="submit"]:focus, input.disabled.success[type="reset"]:focus, .button[disabled].success:hover, input[disabled].success[type="submit"]:hover, input[disabled].success[type="reset"]:hover, .button[disabled].success:focus, input[disabled].success[type="submit"]:focus, input[disabled].success[type="reset"]:focus {
   background-color: #368a55;
 }
 /* line 145, ../sass/foundation/components/_buttons.scss */
-button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success:hover, .button[disabled].success:focus {
+button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, input.disabled.success[type="submit"]:hover, input.disabled.success[type="reset"]:hover, .button.disabled.success:focus, input.disabled.success[type="submit"]:focus, input.disabled.success[type="reset"]:focus, .button[disabled].success:hover, input[disabled].success[type="submit"]:hover, input[disabled].success[type="reset"]:hover, .button[disabled].success:focus, input[disabled].success[type="submit"]:focus, input[disabled].success[type="reset"]:focus {
   color: white;
 }
 /* line 155, ../sass/foundation/components/_buttons.scss */
-button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success:hover, .button[disabled].success:focus {
+button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, input.disabled.success[type="submit"]:hover, input.disabled.success[type="reset"]:hover, .button.disabled.success:focus, input.disabled.success[type="submit"]:focus, input.disabled.success[type="reset"]:focus, .button[disabled].success:hover, input[disabled].success[type="submit"]:hover, input[disabled].success[type="reset"]:hover, .button[disabled].success:focus, input[disabled].success[type="submit"]:focus, input[disabled].success[type="reset"]:focus {
   background-color: #43ac6a;
 }
 /* line 211, ../sass/foundation/components/_buttons.scss */
-button.disabled.alert, button[disabled].alert, .button.disabled.alert, .button[disabled].alert {
+button.disabled.alert, button[disabled].alert, .button.disabled.alert, input.disabled.alert[type="submit"], input.disabled[type="reset"], .button[disabled].alert, input[disabled].alert[type="submit"], input[disabled][type="reset"] {
   background-color: #f04124;
   border-color: #cf2a0e;
   color: white;
@@ -2493,21 +2493,21 @@ button.disabled.alert, button[disabled].alert, .button.disabled.alert, .button[d
   box-shadow: none;
 }
 /* line 134, ../sass/foundation/components/_buttons.scss */
-button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .button.disabled.alert:focus, .button[disabled].alert:hover, .button[disabled].alert:focus {
+button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, input.disabled.alert[type="submit"]:hover, input.disabled[type="reset"]:hover, .button.disabled.alert:focus, input.disabled.alert[type="submit"]:focus, input.disabled[type="reset"]:focus, .button[disabled].alert:hover, input[disabled].alert[type="submit"]:hover, input[disabled][type="reset"]:hover, .button[disabled].alert:focus, input[disabled].alert[type="submit"]:focus, input[disabled][type="reset"]:focus {
   background-color: #cf2a0e;
 }
 /* line 145, ../sass/foundation/components/_buttons.scss */
-button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .button.disabled.alert:focus, .button[disabled].alert:hover, .button[disabled].alert:focus {
+button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, input.disabled.alert[type="submit"]:hover, input.disabled[type="reset"]:hover, .button.disabled.alert:focus, input.disabled.alert[type="submit"]:focus, input.disabled[type="reset"]:focus, .button[disabled].alert:hover, input[disabled].alert[type="submit"]:hover, input[disabled][type="reset"]:hover, .button[disabled].alert:focus, input[disabled].alert[type="submit"]:focus, input[disabled][type="reset"]:focus {
   color: white;
 }
 /* line 155, ../sass/foundation/components/_buttons.scss */
-button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .button.disabled.alert:focus, .button[disabled].alert:hover, .button[disabled].alert:focus {
+button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, input.disabled.alert[type="submit"]:hover, input.disabled[type="reset"]:hover, .button.disabled.alert:focus, input.disabled.alert[type="submit"]:focus, input.disabled[type="reset"]:focus, .button[disabled].alert:hover, input[disabled].alert[type="submit"]:hover, input[disabled][type="reset"]:hover, .button[disabled].alert:focus, input[disabled].alert[type="submit"]:focus, input[disabled][type="reset"]:focus {
   background-color: #f04124;
 }
 
 @media only screen and (min-width: 40.063em) {
   /* line 216, ../sass/foundation/components/_buttons.scss */
-  button, .button {
+  button, .button, input[type="submit"], input[type="reset"] {
     display: inline-block;
   }
 }
@@ -2532,12 +2532,12 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
   float: left;
 }
 /* line 40, ../sass/foundation/components/_button-groups.scss */
-.button-group > li > button, .button-group > li .button {
+.button-group > li > button, .button-group > li .button, .button-group > li input[type="submit"], .button-group > li input[type="reset"] {
   border-left: 1px solid;
   border-color: rgba(255, 255, 255, 0.5);
 }
 /* line 46, ../sass/foundation/components/_button-groups.scss */
-.button-group > li:first-child button, .button-group > li:first-child .button {
+.button-group > li:first-child button, .button-group > li:first-child .button, .button-group > li:first-child input[type="submit"], .button-group > li:first-child input[type="reset"] {
   border-left: 0;
 }
 /* line 56, ../sass/foundation/components/_button-groups.scss */
@@ -2545,40 +2545,40 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
   margin-left: 0;
 }
 /* line 40, ../sass/foundation/components/_button-groups.scss */
-.button-group.radius > * > button, .button-group.radius > * .button {
+.button-group.radius > * > button, .button-group.radius > * .button, .button-group.radius > * input[type="submit"], .button-group.radius > * input[type="reset"] {
   border-left: 1px solid;
   border-color: rgba(255, 255, 255, 0.5);
 }
 /* line 46, ../sass/foundation/components/_button-groups.scss */
-.button-group.radius > *:first-child button, .button-group.radius > *:first-child .button {
+.button-group.radius > *:first-child button, .button-group.radius > *:first-child .button, .button-group.radius > *:first-child input[type="submit"], .button-group.radius > *:first-child input[type="reset"] {
   border-left: 0;
 }
 /* line 74, ../sass/foundation/components/_button-groups.scss */
-.button-group.radius > *:first-child, .button-group.radius > *:first-child > a, .button-group.radius > *:first-child > button, .button-group.radius > *:first-child > .button {
+.button-group.radius > *:first-child, .button-group.radius > *:first-child > a, .button-group.radius > *:first-child > button, .button-group.radius > *:first-child > .button, .button-group.radius > *:first-child > input[type="submit"], .button-group.radius > *:first-child > input[type="reset"] {
   border-bottom-left-radius: 3px;
   border-top-left-radius: 3px;
 }
 /* line 78, ../sass/foundation/components/_button-groups.scss */
-.button-group.radius > *:last-child, .button-group.radius > *:last-child > a, .button-group.radius > *:last-child > button, .button-group.radius > *:last-child > .button {
+.button-group.radius > *:last-child, .button-group.radius > *:last-child > a, .button-group.radius > *:last-child > button, .button-group.radius > *:last-child > .button, .button-group.radius > *:last-child > input[type="submit"], .button-group.radius > *:last-child > input[type="reset"] {
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
 }
 /* line 40, ../sass/foundation/components/_button-groups.scss */
-.button-group.round > * > button, .button-group.round > * .button {
+.button-group.round > * > button, .button-group.round > * .button, .button-group.round > * input[type="submit"], .button-group.round > * input[type="reset"] {
   border-left: 1px solid;
   border-color: rgba(255, 255, 255, 0.5);
 }
 /* line 46, ../sass/foundation/components/_button-groups.scss */
-.button-group.round > *:first-child button, .button-group.round > *:first-child .button {
+.button-group.round > *:first-child button, .button-group.round > *:first-child .button, .button-group.round > *:first-child input[type="submit"], .button-group.round > *:first-child input[type="reset"] {
   border-left: 0;
 }
 /* line 74, ../sass/foundation/components/_button-groups.scss */
-.button-group.round > *:first-child, .button-group.round > *:first-child > a, .button-group.round > *:first-child > button, .button-group.round > *:first-child > .button {
+.button-group.round > *:first-child, .button-group.round > *:first-child > a, .button-group.round > *:first-child > button, .button-group.round > *:first-child > .button, .button-group.round > *:first-child > input[type="submit"], .button-group.round > *:first-child > input[type="reset"] {
   border-bottom-left-radius: 1000px;
   border-top-left-radius: 1000px;
 }
 /* line 78, ../sass/foundation/components/_button-groups.scss */
-.button-group.round > *:last-child, .button-group.round > *:last-child > a, .button-group.round > *:last-child > button, .button-group.round > *:last-child > .button {
+.button-group.round > *:last-child, .button-group.round > *:last-child > a, .button-group.round > *:last-child > button, .button-group.round > *:last-child > .button, .button-group.round > *:last-child > input[type="submit"], .button-group.round > *:last-child > input[type="reset"] {
   border-bottom-right-radius: 1000px;
   border-top-right-radius: 1000px;
 }
@@ -2587,16 +2587,16 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
   width: 50%;
 }
 /* line 40, ../sass/foundation/components/_button-groups.scss */
-.button-group.even-2 li > button, .button-group.even-2 li .button {
+.button-group.even-2 li > button, .button-group.even-2 li .button, .button-group.even-2 li input[type="submit"], .button-group.even-2 li input[type="reset"] {
   border-left: 1px solid;
   border-color: rgba(255, 255, 255, 0.5);
 }
 /* line 46, ../sass/foundation/components/_button-groups.scss */
-.button-group.even-2 li:first-child button, .button-group.even-2 li:first-child .button {
+.button-group.even-2 li:first-child button, .button-group.even-2 li:first-child .button, .button-group.even-2 li:first-child input[type="submit"], .button-group.even-2 li:first-child input[type="reset"] {
   border-left: 0;
 }
 /* line 84, ../sass/foundation/components/_button-groups.scss */
-.button-group.even-2 li button, .button-group.even-2 li .button {
+.button-group.even-2 li button, .button-group.even-2 li .button, .button-group.even-2 li input[type="submit"], .button-group.even-2 li input[type="reset"] {
   width: 100%;
 }
 /* line 99, ../sass/foundation/components/_button-groups.scss */
@@ -2604,16 +2604,16 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
   width: 33.33333%;
 }
 /* line 40, ../sass/foundation/components/_button-groups.scss */
-.button-group.even-3 li > button, .button-group.even-3 li .button {
+.button-group.even-3 li > button, .button-group.even-3 li .button, .button-group.even-3 li input[type="submit"], .button-group.even-3 li input[type="reset"] {
   border-left: 1px solid;
   border-color: rgba(255, 255, 255, 0.5);
 }
 /* line 46, ../sass/foundation/components/_button-groups.scss */
-.button-group.even-3 li:first-child button, .button-group.even-3 li:first-child .button {
+.button-group.even-3 li:first-child button, .button-group.even-3 li:first-child .button, .button-group.even-3 li:first-child input[type="submit"], .button-group.even-3 li:first-child input[type="reset"] {
   border-left: 0;
 }
 /* line 84, ../sass/foundation/components/_button-groups.scss */
-.button-group.even-3 li button, .button-group.even-3 li .button {
+.button-group.even-3 li button, .button-group.even-3 li .button, .button-group.even-3 li input[type="submit"], .button-group.even-3 li input[type="reset"] {
   width: 100%;
 }
 /* line 99, ../sass/foundation/components/_button-groups.scss */
@@ -2621,16 +2621,16 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
   width: 25%;
 }
 /* line 40, ../sass/foundation/components/_button-groups.scss */
-.button-group.even-4 li > button, .button-group.even-4 li .button {
+.button-group.even-4 li > button, .button-group.even-4 li .button, .button-group.even-4 li input[type="submit"], .button-group.even-4 li input[type="reset"] {
   border-left: 1px solid;
   border-color: rgba(255, 255, 255, 0.5);
 }
 /* line 46, ../sass/foundation/components/_button-groups.scss */
-.button-group.even-4 li:first-child button, .button-group.even-4 li:first-child .button {
+.button-group.even-4 li:first-child button, .button-group.even-4 li:first-child .button, .button-group.even-4 li:first-child input[type="submit"], .button-group.even-4 li:first-child input[type="reset"] {
   border-left: 0;
 }
 /* line 84, ../sass/foundation/components/_button-groups.scss */
-.button-group.even-4 li button, .button-group.even-4 li .button {
+.button-group.even-4 li button, .button-group.even-4 li .button, .button-group.even-4 li input[type="submit"], .button-group.even-4 li input[type="reset"] {
   width: 100%;
 }
 /* line 99, ../sass/foundation/components/_button-groups.scss */
@@ -2638,16 +2638,16 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
   width: 20%;
 }
 /* line 40, ../sass/foundation/components/_button-groups.scss */
-.button-group.even-5 li > button, .button-group.even-5 li .button {
+.button-group.even-5 li > button, .button-group.even-5 li .button, .button-group.even-5 li input[type="submit"], .button-group.even-5 li input[type="reset"] {
   border-left: 1px solid;
   border-color: rgba(255, 255, 255, 0.5);
 }
 /* line 46, ../sass/foundation/components/_button-groups.scss */
-.button-group.even-5 li:first-child button, .button-group.even-5 li:first-child .button {
+.button-group.even-5 li:first-child button, .button-group.even-5 li:first-child .button, .button-group.even-5 li:first-child input[type="submit"], .button-group.even-5 li:first-child input[type="reset"] {
   border-left: 0;
 }
 /* line 84, ../sass/foundation/components/_button-groups.scss */
-.button-group.even-5 li button, .button-group.even-5 li .button {
+.button-group.even-5 li button, .button-group.even-5 li .button, .button-group.even-5 li input[type="submit"], .button-group.even-5 li input[type="reset"] {
   width: 100%;
 }
 /* line 99, ../sass/foundation/components/_button-groups.scss */
@@ -2655,16 +2655,16 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
   width: 16.66667%;
 }
 /* line 40, ../sass/foundation/components/_button-groups.scss */
-.button-group.even-6 li > button, .button-group.even-6 li .button {
+.button-group.even-6 li > button, .button-group.even-6 li .button, .button-group.even-6 li input[type="submit"], .button-group.even-6 li input[type="reset"] {
   border-left: 1px solid;
   border-color: rgba(255, 255, 255, 0.5);
 }
 /* line 46, ../sass/foundation/components/_button-groups.scss */
-.button-group.even-6 li:first-child button, .button-group.even-6 li:first-child .button {
+.button-group.even-6 li:first-child button, .button-group.even-6 li:first-child .button, .button-group.even-6 li:first-child input[type="submit"], .button-group.even-6 li:first-child input[type="reset"] {
   border-left: 0;
 }
 /* line 84, ../sass/foundation/components/_button-groups.scss */
-.button-group.even-6 li button, .button-group.even-6 li .button {
+.button-group.even-6 li button, .button-group.even-6 li .button, .button-group.even-6 li input[type="submit"], .button-group.even-6 li input[type="reset"] {
   width: 100%;
 }
 /* line 99, ../sass/foundation/components/_button-groups.scss */
@@ -2672,16 +2672,16 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
   width: 14.28571%;
 }
 /* line 40, ../sass/foundation/components/_button-groups.scss */
-.button-group.even-7 li > button, .button-group.even-7 li .button {
+.button-group.even-7 li > button, .button-group.even-7 li .button, .button-group.even-7 li input[type="submit"], .button-group.even-7 li input[type="reset"] {
   border-left: 1px solid;
   border-color: rgba(255, 255, 255, 0.5);
 }
 /* line 46, ../sass/foundation/components/_button-groups.scss */
-.button-group.even-7 li:first-child button, .button-group.even-7 li:first-child .button {
+.button-group.even-7 li:first-child button, .button-group.even-7 li:first-child .button, .button-group.even-7 li:first-child input[type="submit"], .button-group.even-7 li:first-child input[type="reset"] {
   border-left: 0;
 }
 /* line 84, ../sass/foundation/components/_button-groups.scss */
-.button-group.even-7 li button, .button-group.even-7 li .button {
+.button-group.even-7 li button, .button-group.even-7 li .button, .button-group.even-7 li input[type="submit"], .button-group.even-7 li input[type="reset"] {
   width: 100%;
 }
 /* line 99, ../sass/foundation/components/_button-groups.scss */
@@ -2689,16 +2689,16 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
   width: 12.5%;
 }
 /* line 40, ../sass/foundation/components/_button-groups.scss */
-.button-group.even-8 li > button, .button-group.even-8 li .button {
+.button-group.even-8 li > button, .button-group.even-8 li .button, .button-group.even-8 li input[type="submit"], .button-group.even-8 li input[type="reset"] {
   border-left: 1px solid;
   border-color: rgba(255, 255, 255, 0.5);
 }
 /* line 46, ../sass/foundation/components/_button-groups.scss */
-.button-group.even-8 li:first-child button, .button-group.even-8 li:first-child .button {
+.button-group.even-8 li:first-child button, .button-group.even-8 li:first-child .button, .button-group.even-8 li:first-child input[type="submit"], .button-group.even-8 li:first-child input[type="reset"] {
   border-left: 0;
 }
 /* line 84, ../sass/foundation/components/_button-groups.scss */
-.button-group.even-8 li button, .button-group.even-8 li .button {
+.button-group.even-8 li button, .button-group.even-8 li .button, .button-group.even-8 li input[type="submit"], .button-group.even-8 li input[type="reset"] {
   width: 100%;
 }
 
@@ -3251,12 +3251,12 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
 }
 
 /* line 122, ../sass/foundation/components/_dropdown-buttons.scss */
-.dropdown.button, button.dropdown {
+.dropdown.button, input.dropdown[type="submit"], input.dropdown[type="reset"], button.dropdown {
   position: relative;
   padding-right: 3.5625rem;
 }
 /* line 62, ../sass/foundation/components/_dropdown-buttons.scss */
-.dropdown.button:after, button.dropdown:after {
+.dropdown.button:after, input.dropdown[type="submit"]:after, input.dropdown[type="reset"]:after, button.dropdown:after {
   position: absolute;
   content: "";
   width: 0;
@@ -3267,59 +3267,59 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
   top: 50%;
 }
 /* line 97, ../sass/foundation/components/_dropdown-buttons.scss */
-.dropdown.button:after, button.dropdown:after {
+.dropdown.button:after, input.dropdown[type="submit"]:after, input.dropdown[type="reset"]:after, button.dropdown:after {
   border-width: 0.375rem;
   right: 1.40625rem;
   margin-top: -0.15625rem;
 }
 /* line 116, ../sass/foundation/components/_dropdown-buttons.scss */
-.dropdown.button:after, button.dropdown:after {
+.dropdown.button:after, input.dropdown[type="submit"]:after, input.dropdown[type="reset"]:after, button.dropdown:after {
   border-color: white transparent transparent transparent;
 }
 /* line 123, ../sass/foundation/components/_dropdown-buttons.scss */
-.dropdown.button.tiny, button.dropdown.tiny {
+.dropdown.button.tiny, input.dropdown.tiny[type="submit"], input.dropdown.tiny[type="reset"], button.dropdown.tiny {
   padding-right: 2.625rem;
 }
 /* line 77, ../sass/foundation/components/_dropdown-buttons.scss */
-.dropdown.button.tiny:before, button.dropdown.tiny:before {
+.dropdown.button.tiny:before, input.dropdown.tiny[type="submit"]:before, input.dropdown.tiny[type="reset"]:before, button.dropdown.tiny:before {
   border-width: 0.375rem;
   right: 1.125rem;
   margin-top: -0.125rem;
 }
 /* line 116, ../sass/foundation/components/_dropdown-buttons.scss */
-.dropdown.button.tiny:after, button.dropdown.tiny:after {
+.dropdown.button.tiny:after, input.dropdown.tiny[type="submit"]:after, input.dropdown.tiny[type="reset"]:after, button.dropdown.tiny:after {
   border-color: white transparent transparent transparent;
 }
 /* line 124, ../sass/foundation/components/_dropdown-buttons.scss */
-.dropdown.button.small, button.dropdown.small {
+.dropdown.button.small, input.dropdown.small[type="submit"], input.dropdown.small[type="reset"], button.dropdown.small {
   padding-right: 3.0625rem;
 }
 /* line 87, ../sass/foundation/components/_dropdown-buttons.scss */
-.dropdown.button.small:after, button.dropdown.small:after {
+.dropdown.button.small:after, input.dropdown.small[type="submit"]:after, input.dropdown.small[type="reset"]:after, button.dropdown.small:after {
   border-width: 0.4375rem;
   right: 1.3125rem;
   margin-top: -0.15625rem;
 }
 /* line 116, ../sass/foundation/components/_dropdown-buttons.scss */
-.dropdown.button.small:after, button.dropdown.small:after {
+.dropdown.button.small:after, input.dropdown.small[type="submit"]:after, input.dropdown.small[type="reset"]:after, button.dropdown.small:after {
   border-color: white transparent transparent transparent;
 }
 /* line 125, ../sass/foundation/components/_dropdown-buttons.scss */
-.dropdown.button.large, button.dropdown.large {
+.dropdown.button.large, input.dropdown.large[type="submit"], input.dropdown.large[type="reset"], button.dropdown.large {
   padding-right: 3.625rem;
 }
 /* line 107, ../sass/foundation/components/_dropdown-buttons.scss */
-.dropdown.button.large:after, button.dropdown.large:after {
+.dropdown.button.large:after, input.dropdown.large[type="submit"]:after, input.dropdown.large[type="reset"]:after, button.dropdown.large:after {
   border-width: 0.3125rem;
   right: 1.71875rem;
   margin-top: -0.15625rem;
 }
 /* line 116, ../sass/foundation/components/_dropdown-buttons.scss */
-.dropdown.button.large:after, button.dropdown.large:after {
+.dropdown.button.large:after, input.dropdown.large[type="submit"]:after, input.dropdown.large[type="reset"]:after, button.dropdown.large:after {
   border-color: white transparent transparent transparent;
 }
 /* line 126, ../sass/foundation/components/_dropdown-buttons.scss */
-.dropdown.button.secondary:after, button.dropdown.secondary:after {
+.dropdown.button.secondary:after, input.dropdown.secondary[type="submit"]:after, input.dropdown.secondary[type="reset"]:after, button.dropdown.secondary:after {
   border-color: #333333 transparent transparent transparent;
 }
 
@@ -3456,7 +3456,7 @@ select::-ms-expand {
 
 /* Adjust padding, alignment and radius if pre/post element is a button */
 /* line 357, ../sass/foundation/components/_forms.scss */
-.postfix.button {
+.postfix.button, input.postfix[type="submit"], input.postfix[type="reset"] {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
@@ -3467,7 +3467,7 @@ select::-ms-expand {
 }
 
 /* line 358, ../sass/foundation/components/_forms.scss */
-.prefix.button {
+.prefix.button, input.prefix[type="submit"], input.prefix[type="reset"] {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
@@ -3478,28 +3478,28 @@ select::-ms-expand {
 }
 
 /* line 360, ../sass/foundation/components/_forms.scss */
-.prefix.button.radius {
+.prefix.button.radius, input.prefix.radius[type="submit"], input.prefix.radius[type="reset"] {
   border-radius: 0;
   border-bottom-left-radius: 3px;
   border-top-left-radius: 3px;
 }
 
 /* line 361, ../sass/foundation/components/_forms.scss */
-.postfix.button.radius {
+.postfix.button.radius, input.postfix.radius[type="submit"], input.postfix.radius[type="reset"] {
   border-radius: 0;
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
 }
 
 /* line 362, ../sass/foundation/components/_forms.scss */
-.prefix.button.round {
+.prefix.button.round, input.prefix.round[type="submit"], input.prefix.round[type="reset"] {
   border-radius: 0;
   border-bottom-left-radius: 1000px;
   border-top-left-radius: 1000px;
 }
 
 /* line 363, ../sass/foundation/components/_forms.scss */
-.postfix.button.round {
+.postfix.button.round, input.postfix.round[type="submit"], input.postfix.round[type="reset"] {
   border-radius: 0;
   border-bottom-right-radius: 1000px;
   border-top-right-radius: 1000px;
@@ -3871,7 +3871,7 @@ label.error {
   padding: 1.125rem 1.25rem 1.5rem;
 }
 /* line 75, ../sass/foundation/components/_joyride.scss */
-.joyride-content-wrapper .button {
+.joyride-content-wrapper .button, .joyride-content-wrapper input[type="submit"], .joyride-content-wrapper input[type="reset"] {
   margin-bottom: 0 !important;
 }
 
@@ -4076,7 +4076,7 @@ kbd {
   border-radius: 1000px;
 }
 /* line 99, ../sass/foundation/components/_labels.scss */
-.label.alert {
+.label.alert, input.label[type="reset"] {
   background-color: #f04124;
   color: white;
 }
@@ -4749,7 +4749,7 @@ ul.pagination li {
   display: block;
 }
 /* line 66, ../sass/foundation/components/_progress-bars.scss */
-.progress.alert .meter {
+.progress.alert .meter, input.progress[type="reset"] .meter {
   background: #f04124;
   height: 100%;
   display: block;
@@ -5073,12 +5073,12 @@ dialog[open] {
 }
 
 /* line 173, ../sass/foundation/components/_split-buttons.scss */
-.split.button {
+.split.button, input.split[type="submit"], input.split[type="reset"] {
   position: relative;
   padding-right: 5.0625rem;
 }
 /* line 76, ../sass/foundation/components/_split-buttons.scss */
-.split.button span {
+.split.button span, input.split[type="submit"] span, input.split[type="reset"] span {
   display: block;
   height: 100%;
   position: absolute;
@@ -5087,7 +5087,7 @@ dialog[open] {
   border-left: solid 1px;
 }
 /* line 85, ../sass/foundation/components/_split-buttons.scss */
-.split.button span:after {
+.split.button span:after, input.split[type="submit"] span:after, input.split[type="reset"] span:after {
   position: absolute;
   content: "";
   width: 0;
@@ -5098,104 +5098,104 @@ dialog[open] {
   left: 50%;
 }
 /* line 97, ../sass/foundation/components/_split-buttons.scss */
-.split.button span:active {
+.split.button span:active, input.split[type="submit"] span:active, input.split[type="reset"] span:active {
   background-color: rgba(0, 0, 0, 0.1);
 }
 /* line 103, ../sass/foundation/components/_split-buttons.scss */
-.split.button span {
+.split.button span, input.split[type="submit"] span, input.split[type="reset"] span {
   border-left-color: rgba(255, 255, 255, 0.5);
 }
 /* line 140, ../sass/foundation/components/_split-buttons.scss */
-.split.button span {
+.split.button span, input.split[type="submit"] span, input.split[type="reset"] span {
   width: 3.09375rem;
 }
 /* line 141, ../sass/foundation/components/_split-buttons.scss */
-.split.button span:after {
+.split.button span:after, input.split[type="submit"] span:after, input.split[type="reset"] span:after {
   border-top-style: solid;
   border-width: 0.375rem;
   top: 48%;
   margin-left: -0.375rem;
 }
 /* line 166, ../sass/foundation/components/_split-buttons.scss */
-.split.button span:after {
+.split.button span:after, input.split[type="submit"] span:after, input.split[type="reset"] span:after {
   border-color: white transparent transparent transparent;
 }
 /* line 103, ../sass/foundation/components/_split-buttons.scss */
-.split.button.secondary span {
+.split.button.secondary span, input.split.secondary[type="submit"] span, input.split.secondary[type="reset"] span {
   border-left-color: rgba(255, 255, 255, 0.5);
 }
 /* line 166, ../sass/foundation/components/_split-buttons.scss */
-.split.button.secondary span:after {
+.split.button.secondary span:after, input.split.secondary[type="submit"] span:after, input.split.secondary[type="reset"] span:after {
   border-color: white transparent transparent transparent;
 }
 /* line 103, ../sass/foundation/components/_split-buttons.scss */
-.split.button.alert span {
+.split.button.alert span, input.split.alert[type="submit"] span, input.split[type="reset"] span {
   border-left-color: rgba(255, 255, 255, 0.5);
 }
 /* line 103, ../sass/foundation/components/_split-buttons.scss */
-.split.button.success span {
+.split.button.success span, input.split.success[type="submit"] span, input.split.success[type="reset"] span {
   border-left-color: rgba(255, 255, 255, 0.5);
 }
 /* line 179, ../sass/foundation/components/_split-buttons.scss */
-.split.button.tiny {
+.split.button.tiny, input.split.tiny[type="submit"], input.split.tiny[type="reset"] {
   padding-right: 3.75rem;
 }
 /* line 112, ../sass/foundation/components/_split-buttons.scss */
-.split.button.tiny span {
+.split.button.tiny span, input.split.tiny[type="submit"] span, input.split.tiny[type="reset"] span {
   width: 2.25rem;
 }
 /* line 113, ../sass/foundation/components/_split-buttons.scss */
-.split.button.tiny span:after {
+.split.button.tiny span:after, input.split.tiny[type="submit"] span:after, input.split.tiny[type="reset"] span:after {
   border-top-style: solid;
   border-width: 0.375rem;
   top: 48%;
   margin-left: -0.375rem;
 }
 /* line 180, ../sass/foundation/components/_split-buttons.scss */
-.split.button.small {
+.split.button.small, input.split.small[type="submit"], input.split.small[type="reset"] {
   padding-right: 4.375rem;
 }
 /* line 126, ../sass/foundation/components/_split-buttons.scss */
-.split.button.small span {
+.split.button.small span, input.split.small[type="submit"] span, input.split.small[type="reset"] span {
   width: 2.625rem;
 }
 /* line 127, ../sass/foundation/components/_split-buttons.scss */
-.split.button.small span:after {
+.split.button.small span:after, input.split.small[type="submit"] span:after, input.split.small[type="reset"] span:after {
   border-top-style: solid;
   border-width: 0.4375rem;
   top: 48%;
   margin-left: -0.375rem;
 }
 /* line 181, ../sass/foundation/components/_split-buttons.scss */
-.split.button.large {
+.split.button.large, input.split.large[type="submit"], input.split.large[type="reset"] {
   padding-right: 5.5rem;
 }
 /* line 154, ../sass/foundation/components/_split-buttons.scss */
-.split.button.large span {
+.split.button.large span, input.split.large[type="submit"] span, input.split.large[type="reset"] span {
   width: 3.4375rem;
 }
 /* line 155, ../sass/foundation/components/_split-buttons.scss */
-.split.button.large span:after {
+.split.button.large span:after, input.split.large[type="submit"] span:after, input.split.large[type="reset"] span:after {
   border-top-style: solid;
   border-width: 0.3125rem;
   top: 48%;
   margin-left: -0.375rem;
 }
 /* line 182, ../sass/foundation/components/_split-buttons.scss */
-.split.button.expand {
+.split.button.expand, input.split.expand[type="submit"], input.split.expand[type="reset"] {
   padding-left: 2rem;
 }
 /* line 166, ../sass/foundation/components/_split-buttons.scss */
-.split.button.secondary span:after {
+.split.button.secondary span:after, input.split.secondary[type="submit"] span:after, input.split.secondary[type="reset"] span:after {
   border-color: #333333 transparent transparent transparent;
 }
 /* line 186, ../sass/foundation/components/_split-buttons.scss */
-.split.button.radius span {
+.split.button.radius span, input.split.radius[type="submit"] span, input.split.radius[type="reset"] span {
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
 }
 /* line 187, ../sass/foundation/components/_split-buttons.scss */
-.split.button.round span {
+.split.button.round span, input.split.round[type="submit"] span, input.split.round[type="reset"] span {
   border-bottom-right-radius: 1000px;
   border-top-right-radius: 1000px;
 }
@@ -6529,7 +6529,7 @@ meta.foundation-mq-topbar {
   font-size: 0.75rem;
 }
 /* line 164, ../sass/foundation/components/_top-bar.scss */
-.top-bar .button, .top-bar button {
+.top-bar .button, .top-bar input[type="submit"], .top-bar input[type="reset"], .top-bar button {
   padding-top: .45rem;
   padding-bottom: .35rem;
   margin-bottom: 0;
@@ -6884,7 +6884,7 @@ meta.foundation-mq-topbar {
   padding: 8px 15px;
 }
 /* line 413, ../sass/foundation/components/_top-bar.scss */
-.top-bar-section .dropdown li .button, .top-bar-section .dropdown li button {
+.top-bar-section .dropdown li .button, .top-bar-section .dropdown li input[type="submit"], .top-bar-section .dropdown li input[type="reset"], .top-bar-section .dropdown li button {
   top: auto;
 }
 /* line 416, ../sass/foundation/components/_top-bar.scss */
@@ -6932,6 +6932,8 @@ meta.foundation-mq-topbar {
   /* line 444, ../sass/foundation/components/_top-bar.scss */
   .top-bar input,
   .top-bar .button,
+  .top-bar input[type="submit"],
+  .top-bar input[type="reset"],
   .top-bar button {
     font-size: 0.875rem;
     position: relative;
@@ -8343,19 +8345,22 @@ nav a {
 }
 
 /*********************************************
+    Forms & form elements
+**********************************************/
+/*********************************************
     Footer
 **********************************************/
-/* line 63, ../sass/_styles.scss */
+/* line 73, ../sass/_styles.scss */
 footer.row {
   margin-top: 1rem;
   opacity: 0.5;
 }
-/* line 66, ../sass/_styles.scss */
+/* line 76, ../sass/_styles.scss */
 footer.row * {
   font-size: 0.8rem;
 }
 
-/* line 69, ../sass/_styles.scss */
+/* line 79, ../sass/_styles.scss */
 ul.address {
   list-style-type: none;
 }

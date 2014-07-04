@@ -56,6 +56,16 @@ nav a { text-decoration: none; }
 
 }
 
+/*********************************************
+    Forms & form elements
+**********************************************/
+input[type="submit"] {
+    @extend .button;
+}
+input[type="reset"] {
+    @extend .button;
+    @extend .alert;
+}
 
 /*********************************************
     Footer
