@@ -9,7 +9,7 @@
 ########################################################################
 
 $EM_CONF[$_EXTKEY] = array(
-    'title' => 'Website templatebootstrap',
+    'title' => 'Website template bootstrap',
     'description' => '',
     'category' => 'fe',
     'shy' => 0,
@@ -42,9 +42,10 @@ $EM_CONF[$_EXTKEY] = array(
         'suggests' => array(
             'news' => '1.3.0-',
             'realurl' => '1.12.1-',
+            'gridelements' => '3.0.0-',
         ),
     ),
-    'suggests' => array(),
+    'suggests' => array(),  // DEPRECATED! Use 'constraints' instead!
 );
 
 ?>
