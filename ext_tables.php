@@ -11,6 +11,7 @@ use \TYPO3\CMS\Backend\Sprite\SpriteManager;
  */
 ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript/Production', $_EXTKEY .' PRODUCTION');
 ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript/Development', $_EXTKEY .' DEVELOPMENT');
+ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript/Local', $_EXTKEY .' LOCAL');
 
 /* Embed constants & setup for prod environment */
 ExtensionManagementUtility::addTypoScript($_EXTKEY, 'constants', '
@@ -23,6 +24,12 @@ ExtensionManagementUtility::addTypoScript($_EXTKEY, 'constants', '
 	<INCLUDE_TYPOSCRIPT: source="FILE:EXT:'. $_EXTKEY .'/Resources/Private/TypoScript/constants-development.ts">', $_EXTKEY .'/Configuration/TypoScript/Development/');
 ExtensionManagementUtility::addTypoScript($_EXTKEY, 'setup', '
 	<INCLUDE_TYPOSCRIPT: source="FILE:EXT:'. $_EXTKEY .'/Resources/Private/TypoScript/setup-development.ts">', $_EXTKEY .'/Configuration/TypoScript/Development/');
+
+/* Embed constants & setup for local environment */
+ExtensionManagementUtility::addTypoScript($_EXTKEY, 'constants', '
+	<INCLUDE_TYPOSCRIPT: source="FILE:EXT:'. $_EXTKEY .'/Resources/Private/TypoScript/constants-local.ts">', $_EXTKEY .'/Configuration/TypoScript/Local/');
+ExtensionManagementUtility::addTypoScript($_EXTKEY, 'setup', '
+	<INCLUDE_TYPOSCRIPT: source="FILE:EXT:'. $_EXTKEY .'/Resources/Private/TypoScript/setup-local.ts">', $_EXTKEY .'/Configuration/TypoScript/Local/');
 
 
 

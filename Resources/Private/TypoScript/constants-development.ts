@@ -1,10 +1,10 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:./constants-production.ts">
 # *******************************************************************
 # DEV constants
-# Overwrite values set in production constants only!
+# Overwrite values set in production constants.
 # *******************************************************************
 site {
-    url = http://templatebootstrap.local/
+    url = http://dev.templatebootstrap.devserver.com/
     enableRealURL = 0
     compressAndMergeAssets = 0
 }
