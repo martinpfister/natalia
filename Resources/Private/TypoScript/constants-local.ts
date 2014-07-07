@@ -5,5 +5,5 @@
 # on a local machine.
 # *******************************************************************
 site {
-    url = http://templatebootstrap.local/
+    url = http://{$plugin.templatebootstrap.packageKey}.local/
 }
