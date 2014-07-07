@@ -15,6 +15,7 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:./Content/temp/menu-language.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:./Content/temp/contentloader.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:./Content/temp/contentloader-slide.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:./Content/temp/currentyear.ts">
 
 # **********************************************************
 # Load objects to be rendered
@@ -24,6 +25,7 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:./Content/lib/menu.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:./Content/lib/menu-language.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:./Content/lib/pagetitle.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:./Content/lib/currentyear.ts">
 
 # **********************************************************
 # T3 content objects render config
