@@ -16,7 +16,7 @@ $(function() {
         pauseOnHover: true,
         speed: 800,
         cssEase:'ease-in-out', // CSS easing
-        easing:'ease-in-out', // jQuery easing
+        easing:'swing', // jQuery easing
         autoplay: false,
         autoplaySpeed: 5000,
         slidesToShow: 1,

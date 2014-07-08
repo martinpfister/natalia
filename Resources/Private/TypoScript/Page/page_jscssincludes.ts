@@ -17,11 +17,6 @@ page {
     }
 
 
-    # JS footer
-    includeJSFooter {
-        mainJS = EXT:{$plugin.templatebootstrap.packageKey}/Resources/Public/Template/js/app.js
-    }
-
     # JS libs footer
     includeJSFooterlibs {
         jQuery = EXT:{$plugin.templatebootstrap.packageKey}/Resources/Public/Template/js/jquery/jquery-1.11.1.min.js
@@ -54,11 +49,38 @@ page {
 
         # Click delay removal for mobile browsers
         fastclick = EXT:{$plugin.templatebootstrap.packageKey}/Resources/Public/Template/js/fastclick/fastclick.js
-        # Respond polyfill for IE<9
-        respond = EXT:{$plugin.templatebootstrap.packageKey}/Resources/Public/Template/js/respond/respond.js
 
     } #includeJSFooterlibs
 
+
+    # JS footer
+    includeJSFooter {
+        # Main application js
+        mainJS = EXT:{$plugin.templatebootstrap.packageKey}/Resources/Public/Template/js/app.js
+    }
+
+
+    # Include polyfills for older browsers conditionally
+    footerData.10 = COA
+    footerData.10 {
+        wrap (
+            <!--[if lt IE 9]>
+               |
+            <![endif]-->
+        )
+
+        # Respond polyfill for IE<9
+        10 = TEXT
+        10.value = /typo3conf/ext/{$plugin.templatebootstrap.packageKey}/Resources/Public/Template/js/respond/respond.js
+        10.wrap = <script src="|"></script>
+        10.insertData = 1
+
+        # rem unit polyfill for IE<9
+        20 = TEXT
+        20.value = /typo3conf/ext/{$plugin.templatebootstrap.packageKey}/Resources/Public/Template/js/rem/rem.min.js
+        20.wrap = <script src="|"></script>
+        20.insertData = 1
+    }
 } #page
 
 
@@ -67,8 +89,8 @@ page {
 # Google analytics (conditionally)
 # **********************************************************
 [globalVar = LIT:1 = {$site.googleAnalytics}]
-    page.includeJSFooter.googleanalytics = COA
-    page.includeJSFooter.googleanalytics {
+    page.footerData.100 = COA
+    page.footerData.100 {
         stdWrap.wrap = <script type="text/javascript">|</script>
 
         10 = TEXT
