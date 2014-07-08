@@ -9,7 +9,8 @@
 - Install extension "realurl"
 - RealURL: Set "basic.configFile" (in ext conf) to
     "typo3conf/ext/[YOUR NEW EXTENSION KEY]/Resources/Private/Extensions/realurl/realurl_conf.php"
-- Install extension "gridelements"
+- Install extension "gridelements". You need the 3.0.0 DEV version in order to make it work with T3 > 6.0
+    https://github.com/TYPO3-extensions/gridelements
 - Run "npm install" and then "grunt" from "typo3conf/ext/[YOUREXTENSIONKEY]/Resources/Public/Template" in order
     to install node modules and get going with SCSS.
 - Start developing.
