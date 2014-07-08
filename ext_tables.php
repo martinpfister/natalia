@@ -7,33 +7,6 @@ use \TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 use \TYPO3\CMS\Backend\Sprite\SpriteManager;
 
 /***************
- * Embed static TS
- */
-ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript/Production', $_EXTKEY .' PRODUCTION');
-ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript/Development', $_EXTKEY .' DEVELOPMENT');
-ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript/Local', $_EXTKEY .' LOCAL');
-
-/* Embed constants & setup for prod environment */
-ExtensionManagementUtility::addTypoScript($_EXTKEY, 'constants', '
-	<INCLUDE_TYPOSCRIPT: source="FILE:EXT:'. $_EXTKEY .'/Resources/Private/TypoScript/constants-production.ts">', $_EXTKEY .'/Configuration/TypoScript/Production/');
-ExtensionManagementUtility::addTypoScript($_EXTKEY, 'setup', '
-	<INCLUDE_TYPOSCRIPT: source="FILE:EXT:'. $_EXTKEY .'/Resources/Private/TypoScript/setup-production.ts">', $_EXTKEY .'/Configuration/TypoScript/Production/');
-
-/* Embed constants & setup for dev environment */
-ExtensionManagementUtility::addTypoScript($_EXTKEY, 'constants', '
-	<INCLUDE_TYPOSCRIPT: source="FILE:EXT:'. $_EXTKEY .'/Resources/Private/TypoScript/constants-development.ts">', $_EXTKEY .'/Configuration/TypoScript/Development/');
-ExtensionManagementUtility::addTypoScript($_EXTKEY, 'setup', '
-	<INCLUDE_TYPOSCRIPT: source="FILE:EXT:'. $_EXTKEY .'/Resources/Private/TypoScript/setup-development.ts">', $_EXTKEY .'/Configuration/TypoScript/Development/');
-
-/* Embed constants & setup for local environment */
-ExtensionManagementUtility::addTypoScript($_EXTKEY, 'constants', '
-	<INCLUDE_TYPOSCRIPT: source="FILE:EXT:'. $_EXTKEY .'/Resources/Private/TypoScript/constants-local.ts">', $_EXTKEY .'/Configuration/TypoScript/Local/');
-ExtensionManagementUtility::addTypoScript($_EXTKEY, 'setup', '
-	<INCLUDE_TYPOSCRIPT: source="FILE:EXT:'. $_EXTKEY .'/Resources/Private/TypoScript/setup-local.ts">', $_EXTKEY .'/Configuration/TypoScript/Local/');
-
-
-
-/***************
  * Backend skinning
  */
 $GLOBALS['TBE_STYLES']['logo_login'] = '/typo3conf/ext/' . $_EXTKEY . '/Resources/Public/Backend/Skin/img/logo_login.png';
@@ -54,7 +27,7 @@ $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['BackendLayoutDataProvider'][$_EXTKEY]
 
 
 /***************
- * Add icons to the page tree
+ * Add custom icons to the page tree
  */
 $availableIcons = array('system', 'layouts', 'menufolder');
 foreach($availableIcons as $icon) {

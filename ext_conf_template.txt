@@ -1,0 +1,2 @@
+# cat=basic; type=options[none (do not include ext constants nor setup)=none,Local=local,Development=development,Production=production]; label=Site environment (controls loading of corresponding constants & setup)
+environment =

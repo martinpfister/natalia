@@ -1,4 +1,3 @@
 These are dummy directories!
-Constants and setup will be directly included by ext_tables.php as soon as
-the corresponding static templates (pointing to these directories) are included
-in the root typoscript template.
+"Static" constants and setup will be directly included by ext_localconf.php depending on
+the selected environment in the backend ext config dialogue.
