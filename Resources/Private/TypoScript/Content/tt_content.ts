@@ -45,13 +45,18 @@ tt_content {
         5.value = element
         5.noTrimWrap = || |
 
-        # Content element layout class
         10 = TEXT
-        10.if.value = 0
-        10.if.isGreaterThan.field = layout
-        10.value = layout-{field:layout}
-        10.value.insertData = 1
+        10.value = {field:CType}-element
+        10.insertData = 1
         10.noTrimWrap = || |
+
+        # Content element layout class
+        15 = TEXT
+        15.if.value = 0
+        15.if.isGreaterThan.field = layout
+        15.value = layout-{field:layout}
+        15.value.insertData = 1
+        15.noTrimWrap = || |
 
         # Placeholder for responsive display class
         20 = TEXT
