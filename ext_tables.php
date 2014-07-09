@@ -6,9 +6,9 @@ use \TYPO3\CMS\Core\Utility\GeneralUtility;
 use \TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 use \TYPO3\CMS\Backend\Sprite\SpriteManager;
 
-/***************
+/******************************
  * Backend skinning
- */
+ *****************************/
 $GLOBALS['TBE_STYLES']['logo_login'] = '/typo3conf/ext/' . $_EXTKEY . '/Resources/Public/Backend/Skin/img/logo_login.png';
 $TBE_STYLES['htmlTemplates']['EXT:backend/Resources/Private/Templates/login.html'] = ExtensionManagementUtility::extRelPath($_EXTKEY) . 'Resources/Public/Backend/Skin/login.html';
 
@@ -19,16 +19,22 @@ $GLOBALS['TBE_STYLES']['skins'][$_EXTKEY .'_skin']['stylesheetDirectories'] = ar
     'visual' => 'EXT:'. $_EXTKEY .'/Resources/Public/Backend/Skin/',
 );
 
-/***************
+/******************************
+ * Embed static TS
+ ******************************/
+ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript', $_EXTKEY );
+
+
+/******************************
  * BackendLayoutDataProvider
- */
+ *****************************/
 GeneralUtility::requireOnce(ExtensionManagementUtility::extPath($_EXTKEY) . 'Classes/Hooks/Provider/BackendLayoutDataProvider.php');
 $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['BackendLayoutDataProvider'][$_EXTKEY] = 'Staempfli\TemplateBootstrap\Hooks\Provider\BackendLayoutDataProvider';
 
 
-/***************
- * Add custom icons to the page tree
- */
+/******************************
+ * Custom page tree icons
+ ******************************/
 $availableIcons = array('system', 'layouts', 'menufolder');
 foreach($availableIcons as $icon) {
 	SpriteManager::addTcaTypeIcon(

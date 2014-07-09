@@ -32,8 +32,8 @@ ExtensionManagementUtility::addTypoScriptConstants('plugin.templatebootstrap.pac
 # Load constants & setup according to chosen environment
 $environment = $settings['environment'];
 if ($environment == 'local' || $environment == 'development' || $environment == 'production') {
-    ExtensionManagementUtility::addTypoScriptConstants('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:'. $_EXTKEY .'/Resources/Private/TypoScript/constants-'. $environment .'.ts">');
-    ExtensionManagementUtility::addTypoScriptSetup('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:'. $_EXTKEY .'/Resources/Private/TypoScript/setup-'. $environment .'.ts">');
+    ExtensionManagementUtility::addTypoScript($_EXTKEY, 'constants', '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:'. $_EXTKEY .'/Resources/Private/TypoScript/constants-'. $environment .'.ts">', $_EXTKEY .'/Configuration/TypoScript/');
+    ExtensionManagementUtility::addTypoScript($_EXTKEY, 'setup', '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:'. $_EXTKEY .'/Resources/Private/TypoScript/setup-'. $environment .'.ts">', $_EXTKEY .'/Configuration/TypoScript/');
 }
 
 # Register extconf variable to use in scripts
