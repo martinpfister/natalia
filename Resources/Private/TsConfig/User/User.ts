@@ -18,6 +18,16 @@ options {
 
         # Shows the domain name as a suffix of the title if available
         showDomainNameWithTitle = 1
+
+      	# Disables the left click on an icon that opens the contextmenu
+        disableIconLinkToContextmenu = 0
+
+        # Disable the filter feature in the top panel
+        # hideFilter = 1
+
+        # List of pages with a dedicated color for permanent highlighting in the tree
+        #backgroundColor.<pid> = red
+        
     }
 
     # Available clear cache-buttons
