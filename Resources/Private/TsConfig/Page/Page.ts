@@ -65,7 +65,7 @@ TCEFORM.tt_content {
     date.disabled = 1
 
     # Categories
-    categories.disabled = 1
+    categories.disabled = 0
 
     # Only allow headers 2, 3, and 4
     header_layout {
