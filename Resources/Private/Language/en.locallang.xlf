@@ -1,0 +1,13 @@
+<xliff version="1.0">
+     <file source-language="en" datatype="plaintext" original="messages" product-name="templatebootstrap">
+         <header/>
+         <body>
+             <trans-unit id="home" xml:space="preserve">
+                  <source>Go to home page</source>
+             </trans-unit>
+             <trans-unit id="menu" xml:space="preserve">
+                   <source>Menu</source>
+              </trans-unit>
+         </body>
+     </file>
+</xliff>
