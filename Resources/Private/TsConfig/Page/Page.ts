@@ -7,7 +7,7 @@ TCEFORM.pages {
     alias.disabled = 1
 
     # Categories
-    categories.disabled = 1
+    categories.disabled = 0
 
     # Page type "backend user section"
     # doktype.removeItems = 6
