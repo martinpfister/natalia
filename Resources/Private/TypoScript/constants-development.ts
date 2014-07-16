@@ -4,7 +4,7 @@
 # Overwrite values set in production constants.
 # *******************************************************************
 site {
-    url = http://dev.templatebootstrap.devserver.com/
+    url = http://{$plugin.templatebootstrap.packageKey}.dev.staempfli.com/
     enableRealURL = 0
     compressAndMergeAssets = 0
 }
