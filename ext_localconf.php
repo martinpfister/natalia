@@ -12,14 +12,14 @@ $settings = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY])
 
 # Adding page and user tsconfig
 # Parse files and replace ###PACKAGE_KEY### though!
-$pageTSConfigAbsFileName = GeneralUtility::getFileAbsFileName('EXT:' . $_EXTKEY . '/Resources/Private/TsConfig/Page/Page.ts');
-$RTETSConfigAbsFileName = GeneralUtility::getFileAbsFileName('EXT:' . $_EXTKEY . '/Resources/Private/TsConfig/Page/RTE.ts');
+$pageTSConfigAbsFileName = GeneralUtility::getFileAbsFileName('EXT:' . $_EXTKEY . '/Resources/Private/TsConfig/Page.ts');
+$RTETSConfigAbsFileName = GeneralUtility::getFileAbsFileName('EXT:' . $_EXTKEY . '/Resources/Private/TsConfig/RTE.ts');
 $pageTSConfig = GeneralUtility::getUrl($pageTSConfigAbsFileName);
 $RTETSConfig = GeneralUtility::getUrl($RTETSConfigAbsFileName);
 $pageTSConfig = str_replace('###PACKAGE_KEY###', $_EXTKEY, $pageTSConfig . $RTETSConfig);
 ExtensionManagementUtility::addPageTSConfig($pageTSConfig);
 
-$userTSConfigAbsFileName = GeneralUtility::getFileAbsFileName('EXT:' . $_EXTKEY . '/Resources/Private/TsConfig/User/User.ts');
+$userTSConfigAbsFileName = GeneralUtility::getFileAbsFileName('EXT:' . $_EXTKEY . '/Resources/Private/TsConfig/User.ts');
 $userTSConfig = GeneralUtility::getUrl($userTSConfigAbsFileName);
 $userTSConfig = str_replace('###PACKAGE_KEY###', $_EXTKEY, $userTSConfig);
 ExtensionManagementUtility::addUserTSConfig($userTSConfig);

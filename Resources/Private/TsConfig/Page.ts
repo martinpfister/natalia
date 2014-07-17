@@ -9,8 +9,8 @@ TCEFORM.pages {
     # Categories
     categories.disabled = 0
 
-    # Page type "backend user section"
-    # doktype.removeItems = 6
+    # Page type "backend user section" (remove)
+    doktype.removeItems = 6
 
     # Frontend layouts
     # (disabled per default)
@@ -38,20 +38,6 @@ TCEFORM.pages {
     lastUpdated.disabled = 1
 }
 
-#-------------------------------------------------------------------------------
-#	Page module
-#-------------------------------------------------------------------------------
-# Set the default label and flag
-mod {
-  # Show the content element wizard with tabs
-  wizards.newContentElement.renderMode = tabs
-
-  # Default flag
-  SHARED {
-    defaultLanguageLabel = Deutsch
-    defaultLanguageFlag = de.gif
-    }
-}
 
 #-------------------------------------------------------------------------------
 #  Content elements
@@ -107,16 +93,6 @@ TCAdefaults {
         header_layout = 2
     }
 }
-
-#-------------------------------------------------------------------------------
-# Special backend condition to set defaults for elements created
-# in non main column
-#-------------------------------------------------------------------------------
-#[globalVar = GP:defVals|tt_content|colPos = 1|2|3|4|5]
-#TCAdefaults.tt_content {
-#	header_layout = 3
-#}
-#[end]
 
 #-------------------------------------------------------------------------------
 #  Permissions for new pages
