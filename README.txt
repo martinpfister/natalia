@@ -1,8 +1,10 @@
 ########################################################################
 # Setup for new sites
 ########################################################################
-- Make sure the new extension key (i.e. directory name) differs from "templatebootstrap"!
-- Make sure .git/config DOES NOT refer to "templatebootstrap" but to *your* GIT repo.
+- Create a new repository
+- Clone repository locally
+- Add origin to templatebootstrap ("add origin templatebootstrap https://stash.staempfli.com/scm/TYPO3/templatebootstrap.git")
+- Fetch files from (non-default) origin "templatebootstrap": "git pull templatebootstrap master"
 - Change extension name in ext_emconf.php
 - Activate extension in the extension manager
 - Choose "Site environment" in extension configuration accordingly.
@@ -19,6 +21,7 @@
     - Gridelements (gridelements)
     - yourextension (yourextension)
 
-    Make sure, your extension constants are included last!
+    => Make sure, your extension constants are included last!
+    => Choose option "Include before all static templates if root flag is set"
 
 - Start developing.
