@@ -17,6 +17,23 @@
               <target state="translated">[System] Navigation</target>
          </trans-unit>
 
+        <!-- Ueberschriften -->
+        <trans-unit id="tt_content.header_layout.1" xml:space="preserve">
+            <source>Headline 1 (h1)</source>
+            <target state="translated">Überschrift 2 (h2)</target>
+        </trans-unit>
+        <trans-unit id="tt_content.header_layout.2" xml:space="preserve">
+            <source>Headline 2 (h2)</source>
+            <target state="translated">Überschrift 2 (h2)</target>
+        </trans-unit>
+        <trans-unit id="tt_content.header_layout.3" xml:space="preserve">
+            <source>Headline 3 (h3)</source>
+            <target state="translated">Überschrift 3 (h3)</target>
+        </trans-unit>
+        <trans-unit id="tt_content.header_layout.4" xml:space="preserve">
+            <source>Headline 4 (h4)</source>
+            <target state="translated">Überschrift 4 (h4)</target>
+        </trans-unit>
 
         <!-- BACKEND LAYOUT NAMES -->
         <trans-unit id="backend_layout.SingleColumn" xml:space="preserve" approved="yes">
