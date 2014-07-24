@@ -1,12 +1,3 @@
-page {
-    # page.config overrides default settings from indexed_search/ext_typoscript_setup.txt
-    config {
-        index_enable = 1
-        index_externals = 1
-    }
-}
-
-
 config {
     doctype = html5
     xmlprologue = none
@@ -14,6 +5,9 @@ config {
     disablePrefixComment = 1
     meaningfulTempFilePrefix = 100
     noPageTitle = 2
+
+    index_enable = 1
+    index_externals = 1
 
     # remove inline CSS/JS to external
     removeDefaultJS = external

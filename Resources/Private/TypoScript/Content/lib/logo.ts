@@ -8,7 +8,7 @@ lib.logo {
         file = EXT:{$plugin.templatebootstrap.packageKey}/Resources/Public/Template/images/logo.png
         altText = {$company.name}
         stdWrap.typolink {
-            title.data = LLL:EXT:templatebootstrap/Resources/Private/Language/locallang.xlf:home
+            title.data = LLL:EXT:{$plugin.templatebootstrap.packageKey}/Resources/Private/Language/locallang.xlf:home
             parameter = {$site.url}
             ATagParams = id="logo"
         }
