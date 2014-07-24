@@ -90,3 +90,14 @@ tt_content {
 
 }
 
+# **********************************************************
+# Changes of content element rendering
+# **********************************************************
+
+# Header Wrap löschen
+lib.stdheader.stdWrap.dataWrap =|
+lib.stdheader.10.1.dataWrap = <h1>|</h1>
+lib.stdheader.10.2.dataWrap = <h2>|</h2>
+lib.stdheader.10.3.dataWrap = <h3>|</h3>
+lib.stdheader.10.4.dataWrap = <h4>|</h4>
+lib.stdheader.10.5.dataWrap = <h5>|</h5>
