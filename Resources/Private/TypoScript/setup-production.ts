@@ -8,6 +8,12 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:./Page/config_language.ts">
 
 # **********************************************************
+# Extensions setups
+# **********************************************************
+#<INCLUDE_TYPOSCRIPT: source="FILE:./../Extensions/news/setup.ts">
+#<INCLUDE_TYPOSCRIPT: source="FILE:./../Extensions/indexed_search/setup.ts">
+
+# **********************************************************
 # Load typoscript template objects
 # **********************************************************
 <INCLUDE_TYPOSCRIPT: source="FILE:./Content/temp/menu.ts">
@@ -16,6 +22,7 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:./Content/temp/contentloader.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:./Content/temp/contentloader-slide.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:./Content/temp/currentyear.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:./Content/temp/searchbox.ts">
 
 # **********************************************************
 # Load objects to be rendered
@@ -39,9 +46,6 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:./GridElements/Slider.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:./GridElements/ThreeColumns.ts">
 
-# **********************************************************
-# Extensions setups
-# **********************************************************
-<INCLUDE_TYPOSCRIPT: source="FILE:./../Extensions/news/setup.ts">
+
 
 
