@@ -19,8 +19,7 @@ config {
 
     # RealURL
     simulateStaticDocuments = 0
-    baseURL = {$site.url}
-    absRefPrefix = {$site.url}
+    absRefPrefix = /
     tx_realurl_enable = {$site.enableRealURL}
     prefixLocalAnchors = all
     prefixLocalAnchors >
