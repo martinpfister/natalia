@@ -87,17 +87,10 @@ tt_content {
         27 =< tt_content.stdWrap.innerWrap.cObject.default
         27.20.10.20.value = show-for-xxlarge-up
     }
-
 }
 
 # **********************************************************
-# Changes of content element rendering
+# Remove csc-firstHeader header classes
+# (will not work with nested elements anyway)
 # **********************************************************
-
-# Header Wrap löschen
-lib.stdheader.stdWrap.dataWrap =|
-lib.stdheader.10.1.dataWrap = <h1>|</h1>
-lib.stdheader.10.2.dataWrap = <h2>|</h2>
-lib.stdheader.10.3.dataWrap = <h3>|</h3>
-lib.stdheader.10.4.dataWrap = <h4>|</h4>
-lib.stdheader.10.5.dataWrap = <h5>|</h5>
+lib.stdheader.3.headerClass.cObject.20 >
