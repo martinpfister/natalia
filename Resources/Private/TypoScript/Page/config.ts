@@ -31,7 +31,6 @@ config {
 
     # check for valid L-params
     linkVars = L(0-10)
-    #uniqueLinkVars = 1
 
     # Links & content sharing across domains
     typolinkEnableLinksAcrossDomains = 1
