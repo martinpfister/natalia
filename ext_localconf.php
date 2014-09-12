@@ -39,4 +39,17 @@ if ($environment == 'local' || $environment == 'development' || $environment == 
 # Register extconf variable to use in scripts
 # (such as the layout provider hook)
 $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['Staempfli/TemplateBootstrap']['PackageKey'] = $_EXTKEY;
+
+# Use signal 'afterExtensionConfigurationWrite' to handle post installation tasks
+if (TYPO3_MODE === 'BE') {
+    GeneralUtility::requireOnce(ExtensionManagementUtility::extPath($_EXTKEY) . 'Classes/Utility/PostInstallFileHandler.php');
+    $signalSlotDispatcher = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('TYPO3\\CMS\\Extbase\\SignalSlot\\Dispatcher');
+    $signalSlotDispatcher->connect(
+        'TYPO3\\CMS\\Extensionmanager\\Controller\\ConfigurationController',
+        'afterExtensionConfigurationWrite',
+        'Staempfli\\TemplateBootstrap\\Utility\\PostInstallFileHandler',
+        'handleRobotsTxt'
+    );
+}
+
 ?>

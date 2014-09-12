@@ -1,2 +1,5 @@
-# cat=basic; type=options[none (do not include ext constants nor setup)=none,Local=local,Development=development,Production=production]; label=Site environment (controls loading of corresponding constants & setup)
+# cat=basic; type=options[none (do not include ext constants nor setup)=none,Local=local,Development=development,Production=production]; label=Site environment: Controls loading of corresponding constants & setup
 environment = local
+
+# cat=basic; type=boolean; label=Enable writing robots.txt: Creates robots.txt according to chosen environment. Uses robots.txt-templates from ext directory /Initialisation/robots. Check backend log for any success/error messages.
+writerobots = 0

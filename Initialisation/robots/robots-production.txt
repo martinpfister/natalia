@@ -1,0 +1,11 @@
+User-Agent: *
+Allow: /                                      # Allow bot to enter
+
+Disallow: /t3lib/                             # Nothing to see here
+Disallow: /typo3/                             # Nothing to see here
+Disallow: /typo3conf/                         # Nothing to see here
+Disallow: /typo3temp/                         # Nothing to see here
+# Disallow: /*&type=98                        # Disable print pages
+
+#Sitemap: http://www.example.tld/sitemap.xml   # Your Sitemap
+#Sitemap: http://www.example.tld/rss.xml       # Your RSS Feed

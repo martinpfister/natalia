@@ -7,7 +7,7 @@
 - Fetch files from (non-default) origin "templatebootstrap": "git pull templatebootstrap master"
 - Change extension name in ext_emconf.php
 - Activate extension in the extension manager
-- Choose "Site environment" in extension configuration accordingly.
+- Choose "Site environment" in extension configuration accordingly. Skim through the other options as well.
 - Install extension "realurl"
 - RealURL: Set "basic.configFile" (in ext conf) to
     "typo3conf/ext/[YOUR NEW EXTENSION KEY]/Resources/Private/Extensions/realurl/realurl_conf.php"
