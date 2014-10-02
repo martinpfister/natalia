@@ -48,10 +48,19 @@ config {
     #HTML tag
     htmlTag_stdWrap {
         setContentToCurrent = 1
-        cObject = TEXT
-        cObject.value (
-            <!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
-            <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-        )
+        cObject = COA
+        cObject {
+            10 = LOAD_REGISTER
+            10.htmlTag_langKey < config.htmlTag_langKey
+
+            20 = TEXT
+            20.value (
+                <!--[if IE 8]><html class="no-js lt-ie9" lang="{REGISTER:htmlTag_langKey}"> <![endif]-->
+                <!--[if gt IE 8]><!--> <html class="no-js" lang="{REGISTER:htmlTag_langKey}"> <!--<![endif]-->
+            )
+            20.value.insertData = 1
+
+            30 = RESTORE_REGISTER
+        }
     }
 }
