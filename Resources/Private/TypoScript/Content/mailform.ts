@@ -4,7 +4,11 @@
 plugin.tx_form._CSS_DEFAULT_STYLE >
 tt_content.mailform.20 {
     stdWrap.wrap >
-    layout {
+    # CAUTION!
+    # The native "form" extension has some serious bugs before
+    # TYPO3 6.2.5. Make sure you update before you use custom
+    # form rendering. See also https://forge.typo3.org/issues/31951
+    form.layout {
         form (
             <form>
                 <containerWrap />
