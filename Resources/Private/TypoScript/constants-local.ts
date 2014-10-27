@@ -6,5 +6,5 @@
 # *******************************************************************
 site {
     url = http://{$plugin.templatebootstrap.packageKey}.local/
-    enableRealURL = 1
+    enableRealURL = 0
 }

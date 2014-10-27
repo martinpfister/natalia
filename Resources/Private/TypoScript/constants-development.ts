@@ -5,6 +5,6 @@
 # *******************************************************************
 site {
     url = http://{$plugin.templatebootstrap.packageKey}.dev.staempfli.com/
-    enableRealURL = 0
+    enableRealURL = 1
     compressAndMergeAssets = 0
 }
