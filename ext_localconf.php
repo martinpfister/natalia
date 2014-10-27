@@ -39,6 +39,7 @@ if ($environment == 'local' || $environment == 'development' || $environment == 
 # Register extconf variable to use in scripts
 # (such as the layout provider hook)
 $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['Staempfli/TemplateBootstrap']['PackageKey'] = $_EXTKEY;
+$GLOBALS['TYPO3_CONF_VARS']['FE']['pageNotFound_handling'] = 'USER_FUNCTION:typo3conf/ext/'. $_EXTKEY .'/Classes/Utility/PageNotFoundHandler.php:Staempfli\\Templatebootstrap\\Utility\\PageNotFoundHandler->pageNotFound';
 
 # Use signal 'afterExtensionConfigurationWrite' to handle post installation tasks
 if (TYPO3_MODE === 'BE') {
