@@ -6,6 +6,9 @@ $(function() {
     // Init foundation
     $(document).foundation();
 
+    // Init placeholder for browsers not supporting placeholder attribute
+    $('input, textarea').placeholder();
+
     // Init lightbox (fancybox)
     $('.fancybox, .lightbox').fancybox();
 
