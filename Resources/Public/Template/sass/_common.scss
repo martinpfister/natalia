@@ -1,0 +1,67 @@
+/*********************************************
+    Styles that aren't specifically meant
+    to design the page but rather to set some
+    commonly used formatting such as no
+    bullet lists in menus.
+**********************************************/
+
+
+/*********************************************
+    Image scaling
+    FF compatibility
+**********************************************/
+div.csc-textpic {
+    figure.csc-textpic-image { display:block; }
+    .csc-textpic-imagewrap { max-width:100%; }
+}
+
+
+/*********************************************
+    Menus
+**********************************************/
+nav ul { list-style-type: none; }
+nav a { text-decoration: none; }
+
+
+/*********************************************
+    Reset box sizing on certain elements
+**********************************************/
+.fancybox-wrap,
+.fancybox-wrap *,
+iframe * {
+    box-sizing:initial;
+}
+
+
+/*********************************************
+    Skiplinks
+**********************************************/
+#skiplinks {
+    position:absolute;
+    top:-20000px;
+    z-index:1000;
+    width:100%;
+    margin:auto;
+    padding:0;
+    list-style-type:none;
+
+    a {
+        position:absolute;
+        display:block;
+        width:100%;
+        text-align:center;
+        color:#fff;
+
+        span {
+            display:inline-block;
+            background:$primary-color;
+            padding:7px 10px;
+        }
+    }
+    a:focus,
+    a:active,
+    a:hover {
+        top:20000px;
+        outline:0 none;
+    }
+}

@@ -41,6 +41,22 @@ site {
     # Google analytics
     googleAnalytics = 0
     googleAnalytics.account = UA-XXXXXX
+
+    # Pids that may be used in various places
+    # such as skiplinks, meta menus or ext configurations
+    # Used for skiplinks: home, navigation, content, contact, sitemap, search, optionalSkiplink[1-4]
+    pageUids {
+        home = 1
+        navigation = #navigation
+        content = #content
+        contact =
+        sitemap =
+        search =
+        optionalSkiplink1 =
+        optionalSkiplink2 =
+        optionalSkiplink3 =
+        optionalSkiplink4 =
+    }
 }
 
 

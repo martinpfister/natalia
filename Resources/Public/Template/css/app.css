@@ -10797,6 +10797,83 @@ th.hide-for-touch {
     Site styles
 **********************************************/
 /*********************************************
+    Styles that aren't specifically meant
+    to design the page but rather to set some
+    commonly used formatting such as no
+    bullet lists in menus.
+**********************************************/
+/*********************************************
+    Image scaling
+    FF compatibility
+**********************************************/
+/* line 14, ../sass/_common.scss */
+div.csc-textpic figure.csc-textpic-image {
+  display: block;
+}
+/* line 15, ../sass/_common.scss */
+div.csc-textpic .csc-textpic-imagewrap {
+  max-width: 100%;
+}
+
+/*********************************************
+    Menus
+**********************************************/
+/* line 22, ../sass/_common.scss */
+nav ul {
+  list-style-type: none;
+}
+
+/* line 23, ../sass/_common.scss */
+nav a {
+  text-decoration: none;
+}
+
+/*********************************************
+    Reset box sizing on certain elements
+**********************************************/
+/* line 31, ../sass/_common.scss */
+.fancybox-wrap,
+.fancybox-wrap *,
+iframe * {
+  box-sizing: initial;
+}
+
+/*********************************************
+    Skiplinks
+**********************************************/
+/* line 39, ../sass/_common.scss */
+#skiplinks {
+  position: absolute;
+  top: -20000px;
+  z-index: 1000;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  list-style-type: none;
+}
+/* line 48, ../sass/_common.scss */
+#skiplinks a {
+  position: absolute;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+/* line 55, ../sass/_common.scss */
+#skiplinks a span {
+  display: inline-block;
+  background: #008cba;
+  padding: 7px 10px;
+}
+/* line 63, ../sass/_common.scss */
+#skiplinks a:focus,
+#skiplinks a:active,
+#skiplinks a:hover {
+  top: 20000px;
+  outline: 0 none;
+}
+
+/*********************************************
     Media query examples
 **********************************************/
 /*@media only screen { }
@@ -10832,18 +10909,8 @@ th.hide-for-touch {
 /*********************************************
     Menus
 **********************************************/
-/* line 37, ../sass/_styles.scss */
-nav ul {
-  list-style-type: none;
-}
-
-/* line 38, ../sass/_styles.scss */
-nav a {
-  text-decoration: none;
-}
-
 @media only screen and (min-width: 40.063em) {
-  /* line 41, ../sass/_styles.scss */
+  /* line 38, ../sass/_styles.scss */
   nav.language {
     float: right;
   }
@@ -10851,7 +10918,7 @@ nav a {
 /*********************************************
     Slider
 **********************************************/
-/* line 49, ../sass/_styles.scss */
+/* line 46, ../sass/_styles.scss */
 .slide span {
   color: #fff;
   font-weight: bold;
@@ -10867,17 +10934,17 @@ nav a {
 /*********************************************
     Footer
 **********************************************/
-/* line 73, ../sass/_styles.scss */
+/* line 70, ../sass/_styles.scss */
 footer.row {
   margin-top: 1rem;
   opacity: 0.5;
 }
-/* line 76, ../sass/_styles.scss */
+/* line 73, ../sass/_styles.scss */
 footer.row * {
   font-size: 0.8rem;
 }
 
-/* line 79, ../sass/_styles.scss */
+/* line 76, ../sass/_styles.scss */
 ul.address {
   list-style-type: none;
 }

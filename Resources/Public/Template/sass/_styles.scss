@@ -34,9 +34,6 @@
 /*********************************************
     Menus
 **********************************************/
-nav ul { list-style-type: none; }
-nav a { text-decoration: none; }
-
 @media #{$medium-up} {
     nav.language {
         float: right;

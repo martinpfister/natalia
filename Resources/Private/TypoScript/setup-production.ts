@@ -33,6 +33,7 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:./Content/lib/menu-language.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:./Content/lib/pagetitle.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:./Content/lib/currentyear.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:./Content/lib/skiplinks.ts">
 
 # **********************************************************
 # T3 content objects render config
