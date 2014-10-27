@@ -5,6 +5,9 @@
             <trans-unit id="home" xml:space="preserve">
                 <source>Go to home page</source>
             </trans-unit>
+            <trans-unit id="logo" xml:space="preserve">
+                <source>logo</source>
+            </trans-unit>
             <trans-unit id="menu" xml:space="preserve">
                 <source>Menu</source>
             </trans-unit>
