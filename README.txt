@@ -6,12 +6,13 @@
 - Add origin to templatebootstrap ("add origin templatebootstrap https://stash.staempfli.com/scm/TYPO3/templatebootstrap.git")
 - Fetch files from (non-default) origin "templatebootstrap": "git pull templatebootstrap master"
 - Change extension name in ext_emconf.php
+- Change version to '0.0.1' (probably). On website launch, this needs to be changed to 1.0.0
 - Activate extension in the extension manager
 - Choose "Site environment" in extension configuration accordingly. Skim through the other options as well.
 - Install extension "realurl"
 - RealURL: Set "basic.configFile" (in ext conf) to
     "typo3conf/ext/[YOUR NEW EXTENSION KEY]/Resources/Private/Extensions/realurl/realurl_conf.php"
-- Install extension "gridelements". You need the 3.0.0 DEV version in order to make it work with T3 > 6.0
+- Install extension "gridelements". You'll need the 3.0.0 DEV version in order to make it work with T3 > 6.0
     https://github.com/TYPO3-extensions/gridelements
 - Run "npm install" and then "grunt" from "typo3conf/ext/[YOUREXTENSIONKEY]/Resources/Public/Template" in order
     to install node modules and get going with SCSS.
