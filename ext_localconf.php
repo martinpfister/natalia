@@ -28,6 +28,8 @@ ExtensionManagementUtility::addUserTSConfig($userTSConfig);
 # Register constants to use package key and version in TS later
 ExtensionManagementUtility::addTypoScriptConstants('plugin.templatebootstrap.packageKey='. $_EXTKEY);
 ExtensionManagementUtility::addTypoScriptConstants('plugin.templatebootstrap.packageVersion='. ExtensionManagementUtility::getExtensionVersion($_EXTKEY));
+# Do not change this. It is used to identify which templatebootstrap version this package is originally derived from.
+ExtensionManagementUtility::addTypoScriptConstants('plugin.templatebootstrap.bootstrapPackageVersion=1.0.DEV');
 
 # Load constants & setup according to chosen environment
 $environment = $settings['environment'];

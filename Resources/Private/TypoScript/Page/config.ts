@@ -42,7 +42,12 @@ config {
     cache_period = 1200
     sendCacheHeaders = 1
 
-    headerComment = Stämpfli AG // www.staempfli.com // Package version {$plugin.templatebootstrap.packageVersion}
+    headerComment (
+        Stämpfli AG // www.staempfli.com
+
+Package version {$plugin.templatebootstrap.packageVersion}
+Bootstrap package version {$plugin.templatebootstrap.bootstrapPackageVersion}
+    )
 
 
     #HTML tag
