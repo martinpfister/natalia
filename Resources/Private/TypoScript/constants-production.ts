@@ -28,7 +28,7 @@ site {
 
     # Page title
     pageTitlePrefix < company.name
-    pageTitlePrefix := appendString( -&nbsp;)
+    pageTitlePrefix := appendString( -)
     pageTitleSuffix =
 
     # Languages

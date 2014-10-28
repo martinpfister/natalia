@@ -25,6 +25,9 @@ page {
         wrap = <title>|</title>
         10 = TEXT
         10.value = {$site.pageTitlePrefix}
+        # Insert space character between prefix and page title, if prefix is set
+        10.stdWrap.noTrimWrap = || |
+        10.stdWrap.if.isTrue = {$site.pageTitlePrefix}
         20 = TEXT
         20.field = subtitle // title
         30 = TEXT
