@@ -16,5 +16,5 @@ error404Uid =
 # cat=Error handling; type=string; label=401 Error page:Page UID. Usually you should redirect to a login page.
 error401Uid =
 
-# cat=security; type=boolean; label=Generate trusted hosts pattern on save: Saves pattern according to found domains to AdditionalConfiguration.php (overrides ['SYS']['trustedHostsPattern']). See T3 security guide.
+# cat=security; type=boolean; label=Generate trusted hosts pattern on next save: Saves pattern (according to sys_domain table) to AdditionalConfiguration.php. Overrides ['SYS']['trustedHostsPattern']! Example:'^(yourfirstdomain.com|yourotherdomain.com)$'. See T3 security guide.
 generateTrustedHostsPattern = 0
