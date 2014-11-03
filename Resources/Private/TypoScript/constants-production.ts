@@ -24,7 +24,9 @@ company {
 site {
 
     url = http://www.site.com
+
     enableRealURL = 1
+    enableSocialMediaMetaTags = 1
 
     # Page title
     pageTitlePrefix < company.name

@@ -14,6 +14,8 @@ page {
         description.field = description
         abstract.field = abstract
         robots = INDEX,FOLLOW
+        # See page_socialmediametatags.ts for facebook open graph and
+        # twitter cards tags (activated/deativated by constant "").
     }
 
     # Favicon

@@ -1,11 +1,12 @@
 # **********************************************************
 # Base
 # **********************************************************
-<INCLUDE_TYPOSCRIPT: source="FILE:./Page/page.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:./Page/page_felayoutrendering.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:./Page/page_jscssincludes.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:./Page/config_language.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:./Page/config.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:./Page/page.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:./Page/page_socialmediametatags.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:./Page/page_felayoutrendering.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:./Page/page_jscssincludes.ts">
 
 # **********************************************************
 # Extensions setups
