@@ -38,7 +38,7 @@ plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = 1
     config {
         sys_language_uid = 3
         language = en
-        locale_all = en_EN
+        locale_all = en_GB
         htmlTag_langKey = en
     }
     plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = 3
