@@ -8294,7 +8294,7 @@ div.csc-textpic figure.csc-textpic-image {
   display: block;
 }
 /* line 15, ../sass/_common.scss */
-div.csc-textpic .csc-textpic-imagewrap {
+div.csc-textpic div {
   max-width: 100%;
 }
 
