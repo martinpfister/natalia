@@ -106,6 +106,7 @@ class PageNotFoundHandler {
 
         // Generate redirect link and status
         $redirectLink = NULL;
+        $isAuthorizationAccessFailure = false;
         // 401
         if ($isAuthorizationAccessFailure && $error401Uid) {
             $redirectLink = $currentURLParsed['scheme'] .'://'. $host . '/index.php?id=' . $error401Uid;
@@ -125,9 +126,16 @@ class PageNotFoundHandler {
                 $redirectLink .= '&'. $languageParameter .'='. $sysLanguageUid;
             }
             $redirectLink .= '&redirectloops='. $redirectLoops;
-            HttpUtility::redirect($redirectLink, $headerStatus);
+
+            HttpUtility::setResponseCode($headerStatus);
+            $urlContent = GeneralUtility::getUrl($redirectLink);
+            $urlContent = trim($urlContent);
+            print $urlContent;
         }
 
+        if (!empty($urlContent)) {
+            die;
+        }
 
         // Not redirected so far? Maximum number of redirects reached? Throw raw 404 as fallback.
         HttpUtility::setResponseCode(HttpUtility::HTTP_STATUS_404);
