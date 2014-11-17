@@ -36,38 +36,53 @@ tt_content {
 
     # **********************************************************
     # Image column wraps
-    # Assigning "row collapse" to csc-textpic-imagerow is done within scss
+    # Implement foundation's "block grid"
     image.20 {
 
         # Handle columns
         addClassesCol.override >
-        addClassesCol.override.cObject = CASE
-        addClassesCol.override.cObject {
-            key.field = imagecols
-            default = TEXT
-            default.value = small-12 columns
+        rendering.noCaption {
+            columnStdWrap.wrap = <li class="csc-textpic-imagecolumn###CLASSES###">|</li>
 
-            1 = TEXT
-            1.value = small-12 columns
+            rowStdWrap >
+            rowStdWrap.wrap = |
+            rowStdWrap.cObject = CASE
+            rowStdWrap.append = TEXT
+            rowStdWrap.append.value = |</ul>
+            rowStdWrap.cObject {
 
-            2 = TEXT
-            2.value = small-12 medium-6 columns
+                stdWrap.noTrimWrap = |<ul class="csc-textpic-imagerow |">|
+                key.field = imagecols
+                1 = TEXT
+                1.value = small-block-grid-1
+                2 = TEXT
+                2.value = small-block-grid-1 medium-block-grid-2
+                3 = TEXT
+                3.value = small-block-grid-1 medium-block-grid-2 large-block-grid-3
+                4 = TEXT
+                4.value = small-block-grid-1 medium-block-grid-2 large-block-grid-4
+                5 = TEXT
+                5.value = small-block-grid-1 medium-block-grid-2 large-block-grid-5
+                6 = TEXT
+                6.value = small-block-grid-1 medium-block-grid-2 large-block-grid-6
+                7 = TEXT
+                7.value = small-block-grid-1 medium-block-grid-2 large-block-grid-7
+                8 = TEXT
+                8.value = small-block-grid-1 medium-block-grid-2 large-block-grid-8
+            }
+            noRowsStdWrap < .rowStdWrap
+            noRowsStdWrap.cObject.stdWrap.noTrimWrap = |<ul class="csc-textpic-imagerow csc-textpic-imagerow-none |">|
+            lastRowStdWrap < .rowStdWrap
+            lastRowStdWrap.cObject.stdWrap.noTrimWrap = |<ul class="csc-textpic-imagerow csc-textpic-imagerow-last |">|
 
-            3 = TEXT
-            3.value = small-12 medium-4 columns
-
-            4 = TEXT
-            4.value = small-12 medium-3 columns
-
-            5 = TEXT
-            5.value = small-12 medium-2 columns
-
-            6 = TEXT
-            6.value = small-12 large-2 columns
-
-            12 = TEXT
-            12.value = small-12 large-1 columns
         }
+        rendering.splitCaption.rowStdWrap.wrap < .rendering.noCaption.rowStdWrap
+        rendering.splitCaption.noRowsStdWrap.wrap < .rendering.noCaption.noRowsStdWrap
+        rendering.splitCaption.lastRowStdWrap.wrap < .rendering.noCaption.lastRowStdWrap
+        rendering.splitCaption.columnStdWrap.wrap < .rendering.noCaption.columnStdWrap.wrap
+
+        # Handle rows
+        imageColumnStdWrap.dataWrap = <li class="csc-textpic-imagecolumn" style="width:{register:columnwidth}px;">|</li>
     }
 
 

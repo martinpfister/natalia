@@ -12,26 +12,13 @@
 **********************************************/
 div.csc-textpic {
     figure.csc-textpic-image { display:block; }
-    div { max-width:100%; }
+    .csc-textpic-imagewrap { max-width:100%; }
 }
 
 
 /*********************************************
-    Multiple image rows/columns
-
-    Width-related classes such as "small-12"
-    are defined within content rendering
-    (tt_content.image.20.addClassesCol...)
+    Image captions
 **********************************************/
-.csc-textpic-imagerow {
-    @extend .row;
-    @extend .row.collapse;
-}
-div.csc-textpic-imagecolumn     { margin-right:0; }
-.csc-textpic-image {
-    padding-right:5%;
-    padding-bottom:5%;
-}
 figcaption.csc-textpic-caption  {
     display:block;
     padding-top:1%;
