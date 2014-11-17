@@ -28,9 +28,15 @@ div.csc-textpic {
     @extend .row.collapse;
 }
 div.csc-textpic-imagecolumn     { margin-right:0; }
-.csc-textpic-image,
-figcaption.csc-textpic-caption  { padding-right:5%; }
-figcaption.csc-textpic-caption  { display:block; }
+.csc-textpic-image {
+    padding-right:5%;
+    padding-bottom:5%;
+}
+figcaption.csc-textpic-caption  {
+    display:block;
+    padding-top:1%;
+    font-size:$small-font-size;
+}
 
 
 /*********************************************

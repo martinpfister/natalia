@@ -5847,7 +5847,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* line 257, ../sass/foundation/components/_type.scss */
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
-  font-size: 60%;
+  font-size: 80%;
   color: #7a7a7a;
   line-height: 0;
 }
@@ -5917,7 +5917,7 @@ b {
 
 /* line 294, ../sass/foundation/components/_type.scss */
 small {
-  font-size: 60%;
+  font-size: 80%;
   line-height: inherit;
 }
 
@@ -8320,26 +8320,28 @@ div.csc-textpic-imagecolumn {
   margin-right: 0;
 }
 
-/* line 32, ../sass/_common.scss */
-.csc-textpic-image,
-figcaption.csc-textpic-caption {
+/* line 31, ../sass/_common.scss */
+.csc-textpic-image {
   padding-right: 5%;
+  padding-bottom: 5%;
 }
 
-/* line 33, ../sass/_common.scss */
+/* line 35, ../sass/_common.scss */
 figcaption.csc-textpic-caption {
   display: block;
+  padding-top: 1%;
+  font-size: 80%;
 }
 
 /*********************************************
     Menus
 **********************************************/
-/* line 39, ../sass/_common.scss */
+/* line 45, ../sass/_common.scss */
 nav ul {
   list-style-type: none;
 }
 
-/* line 40, ../sass/_common.scss */
+/* line 46, ../sass/_common.scss */
 nav a {
   text-decoration: none;
 }
@@ -8347,7 +8349,7 @@ nav a {
 /*********************************************
     Reset box sizing on certain elements
 **********************************************/
-/* line 48, ../sass/_common.scss */
+/* line 54, ../sass/_common.scss */
 .fancybox-wrap,
 .fancybox-wrap *,
 iframe * {
@@ -8357,7 +8359,7 @@ iframe * {
 /*********************************************
     Skiplinks
 **********************************************/
-/* line 56, ../sass/_common.scss */
+/* line 62, ../sass/_common.scss */
 #skiplinks {
   position: absolute;
   top: -20000px;
@@ -8367,7 +8369,7 @@ iframe * {
   padding: 0;
   list-style-type: none;
 }
-/* line 65, ../sass/_common.scss */
+/* line 71, ../sass/_common.scss */
 #skiplinks a {
   position: absolute;
   display: block;
@@ -8375,13 +8377,13 @@ iframe * {
   text-align: center;
   color: #fff;
 }
-/* line 72, ../sass/_common.scss */
+/* line 78, ../sass/_common.scss */
 #skiplinks a span {
   display: inline-block;
   background: #008cba;
   padding: 7px 10px;
 }
-/* line 80, ../sass/_common.scss */
+/* line 86, ../sass/_common.scss */
 #skiplinks a:focus,
 #skiplinks a:active,
 #skiplinks a:hover {
