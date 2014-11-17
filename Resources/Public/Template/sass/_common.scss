@@ -17,6 +17,23 @@ div.csc-textpic {
 
 
 /*********************************************
+    Multiple image rows/columns
+
+    Width-related classes such as "small-12"
+    are defined within content rendering
+    (tt_content.image.20.addClassesCol...)
+**********************************************/
+.csc-textpic-imagerow {
+    @extend .row;
+    @extend .row.collapse;
+}
+div.csc-textpic-imagecolumn     { margin-right:0; }
+.csc-textpic-image,
+figcaption.csc-textpic-caption  { padding-right:5%; }
+figcaption.csc-textpic-caption  { display:block; }
+
+
+/*********************************************
     Menus
 **********************************************/
 nav ul { list-style-type: none; }

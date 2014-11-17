@@ -150,7 +150,7 @@ select {
 }
 
 /* line 206, ../sass/foundation/components/_grid.scss */
-.row {
+.row, .csc-textpic-imagerow {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -159,27 +159,28 @@ select {
   max-width: 62.5rem;
 }
 /* line 182, ../sass/foundation/components/_global.scss */
-.row:before, .row:after {
+.row:before, .csc-textpic-imagerow:before, .row:after, .csc-textpic-imagerow:after {
   content: " ";
   display: table;
 }
 /* line 183, ../sass/foundation/components/_global.scss */
-.row:after {
+.row:after, .csc-textpic-imagerow:after {
   clear: both;
 }
 /* line 211, ../sass/foundation/components/_grid.scss */
-.row.collapse > .column,
-.row.collapse > .columns {
+.row.collapse > .column, .csc-textpic-imagerow > .column,
+.row.collapse > .columns,
+.csc-textpic-imagerow > .columns {
   padding-left: 0;
   padding-right: 0;
 }
 /* line 213, ../sass/foundation/components/_grid.scss */
-.row.collapse .row {
+.row.collapse .row, .csc-textpic-imagerow .row, .row.collapse .csc-textpic-imagerow, .csc-textpic-imagerow .csc-textpic-imagerow {
   margin-left: 0;
   margin-right: 0;
 }
 /* line 216, ../sass/foundation/components/_grid.scss */
-.row .row {
+.row .row, .csc-textpic-imagerow .row, .row .csc-textpic-imagerow, .csc-textpic-imagerow .csc-textpic-imagerow {
   width: auto;
   margin-left: -0.9375rem;
   margin-right: -0.9375rem;
@@ -188,27 +189,27 @@ select {
   max-width: none;
 }
 /* line 182, ../sass/foundation/components/_global.scss */
-.row .row:before, .row .row:after {
+.row .row:before, .csc-textpic-imagerow .row:before, .row .csc-textpic-imagerow:before, .csc-textpic-imagerow .csc-textpic-imagerow:before, .row .row:after, .csc-textpic-imagerow .row:after, .row .csc-textpic-imagerow:after, .csc-textpic-imagerow .csc-textpic-imagerow:after {
   content: " ";
   display: table;
 }
 /* line 183, ../sass/foundation/components/_global.scss */
-.row .row:after {
+.row .row:after, .csc-textpic-imagerow .row:after, .row .csc-textpic-imagerow:after, .csc-textpic-imagerow .csc-textpic-imagerow:after {
   clear: both;
 }
 /* line 217, ../sass/foundation/components/_grid.scss */
-.row .row.collapse {
+.row .row.collapse, .csc-textpic-imagerow .row.collapse, .row .csc-textpic-imagerow, .csc-textpic-imagerow .csc-textpic-imagerow {
   width: auto;
   margin: 0;
   max-width: none;
 }
 /* line 182, ../sass/foundation/components/_global.scss */
-.row .row.collapse:before, .row .row.collapse:after {
+.row .row.collapse:before, .csc-textpic-imagerow .row.collapse:before, .row .csc-textpic-imagerow:before, .csc-textpic-imagerow .csc-textpic-imagerow:before, .row .row.collapse:after, .csc-textpic-imagerow .row.collapse:after, .row .csc-textpic-imagerow:after, .csc-textpic-imagerow .csc-textpic-imagerow:after {
   content: " ";
   display: table;
 }
 /* line 183, ../sass/foundation/components/_global.scss */
-.row .row.collapse:after {
+.row .row.collapse:after, .csc-textpic-imagerow .row.collapse:after, .row .csc-textpic-imagerow:after, .csc-textpic-imagerow .csc-textpic-imagerow:after {
   clear: both;
 }
 
@@ -3360,33 +3361,42 @@ form {
 
 /* Using forms within rows, we need to set some defaults */
 /* line 82, ../sass/foundation/components/_forms.scss */
-form .row .row {
+form .row .row, form .csc-textpic-imagerow .row, form .row .csc-textpic-imagerow, form .csc-textpic-imagerow .csc-textpic-imagerow {
   margin: 0 -0.5rem;
 }
 /* line 85, ../sass/foundation/components/_forms.scss */
-form .row .row .column,
-form .row .row .columns {
+form .row .row .column, form .csc-textpic-imagerow .row .column, form .row .csc-textpic-imagerow .column, form .csc-textpic-imagerow .csc-textpic-imagerow .column,
+form .row .row .columns,
+form .csc-textpic-imagerow .row .columns,
+form .row .csc-textpic-imagerow .columns,
+form .csc-textpic-imagerow .csc-textpic-imagerow .columns {
   padding: 0 0.5rem;
 }
 /* line 88, ../sass/foundation/components/_forms.scss */
-form .row .row.collapse {
+form .row .row.collapse, form .csc-textpic-imagerow .row.collapse, form .row .csc-textpic-imagerow, form .csc-textpic-imagerow .csc-textpic-imagerow {
   margin: 0;
 }
 /* line 91, ../sass/foundation/components/_forms.scss */
-form .row .row.collapse .column,
-form .row .row.collapse .columns {
+form .row .row.collapse .column, form .csc-textpic-imagerow .row.collapse .column, form .row .csc-textpic-imagerow .column, form .csc-textpic-imagerow .csc-textpic-imagerow .column,
+form .row .row.collapse .columns,
+form .csc-textpic-imagerow .row.collapse .columns,
+form .row .csc-textpic-imagerow .columns,
+form .csc-textpic-imagerow .csc-textpic-imagerow .columns {
   padding: 0;
 }
 /* line 92, ../sass/foundation/components/_forms.scss */
-form .row .row.collapse input {
+form .row .row.collapse input, form .csc-textpic-imagerow .row.collapse input, form .row .csc-textpic-imagerow input, form .csc-textpic-imagerow .csc-textpic-imagerow input {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 /* line 101, ../sass/foundation/components/_forms.scss */
-form .row input.column,
+form .row input.column, form .csc-textpic-imagerow input.column,
 form .row input.columns,
+form .csc-textpic-imagerow input.columns,
 form .row textarea.column,
-form .row textarea.columns {
+form .csc-textpic-imagerow textarea.column,
+form .row textarea.columns,
+form .csc-textpic-imagerow textarea.columns {
   padding-left: 0.5rem;
 }
 
@@ -6513,7 +6523,7 @@ meta.foundation-mq-topbar {
   list-style: none;
 }
 /* line 157, ../sass/foundation/components/_top-bar.scss */
-.top-bar .row {
+.top-bar .row, .top-bar .csc-textpic-imagerow {
   max-width: none;
 }
 /* line 160, ../sass/foundation/components/_top-bar.scss */
@@ -8299,14 +8309,37 @@ div.csc-textpic div {
 }
 
 /*********************************************
+    Multiple image rows/columns
+
+    Width-related classes such as "small-12"
+    are defined within content rendering
+    (tt_content.image.20.addClassesCol...)
+**********************************************/
+/* line 30, ../sass/_common.scss */
+div.csc-textpic-imagecolumn {
+  margin-right: 0;
+}
+
+/* line 32, ../sass/_common.scss */
+.csc-textpic-image,
+figcaption.csc-textpic-caption {
+  padding-right: 5%;
+}
+
+/* line 33, ../sass/_common.scss */
+figcaption.csc-textpic-caption {
+  display: block;
+}
+
+/*********************************************
     Menus
 **********************************************/
-/* line 22, ../sass/_common.scss */
+/* line 39, ../sass/_common.scss */
 nav ul {
   list-style-type: none;
 }
 
-/* line 23, ../sass/_common.scss */
+/* line 40, ../sass/_common.scss */
 nav a {
   text-decoration: none;
 }
@@ -8314,7 +8347,7 @@ nav a {
 /*********************************************
     Reset box sizing on certain elements
 **********************************************/
-/* line 31, ../sass/_common.scss */
+/* line 48, ../sass/_common.scss */
 .fancybox-wrap,
 .fancybox-wrap *,
 iframe * {
@@ -8324,7 +8357,7 @@ iframe * {
 /*********************************************
     Skiplinks
 **********************************************/
-/* line 39, ../sass/_common.scss */
+/* line 56, ../sass/_common.scss */
 #skiplinks {
   position: absolute;
   top: -20000px;
@@ -8334,7 +8367,7 @@ iframe * {
   padding: 0;
   list-style-type: none;
 }
-/* line 48, ../sass/_common.scss */
+/* line 65, ../sass/_common.scss */
 #skiplinks a {
   position: absolute;
   display: block;
@@ -8342,13 +8375,13 @@ iframe * {
   text-align: center;
   color: #fff;
 }
-/* line 55, ../sass/_common.scss */
+/* line 72, ../sass/_common.scss */
 #skiplinks a span {
   display: inline-block;
   background: #008cba;
   padding: 7px 10px;
 }
-/* line 63, ../sass/_common.scss */
+/* line 80, ../sass/_common.scss */
 #skiplinks a:focus,
 #skiplinks a:active,
 #skiplinks a:hover {
@@ -8418,12 +8451,12 @@ iframe * {
     Footer
 **********************************************/
 /* line 70, ../sass/_styles.scss */
-footer.row {
+footer.row, footer.csc-textpic-imagerow {
   margin-top: 1rem;
   opacity: 0.5;
 }
 /* line 73, ../sass/_styles.scss */
-footer.row * {
+footer.row *, footer.csc-textpic-imagerow * {
   font-size: 0.8rem;
 }
 

@@ -35,6 +35,43 @@ tt_content {
 
 
     # **********************************************************
+    # Image column wraps
+    # Assigning "row collapse" to csc-textpic-imagerow is done within scss
+    image.20 {
+
+        # Handle columns
+        addClassesCol.override >
+        addClassesCol.override.cObject = CASE
+        addClassesCol.override.cObject {
+            key.field = imagecols
+            default = TEXT
+            default.value = small-12 columns
+
+            1 = TEXT
+            1.value = small-12 columns
+
+            2 = TEXT
+            2.value = small-12 medium-6 columns
+
+            3 = TEXT
+            3.value = small-12 medium-4 columns
+
+            4 = TEXT
+            4.value = small-12 medium-3 columns
+
+            5 = TEXT
+            5.value = small-12 medium-2 columns
+
+            6 = TEXT
+            6.value = small-12 large-2 columns
+
+            12 = TEXT
+            12.value = small-12 large-1 columns
+        }
+    }
+
+
+    # **********************************************************
     # COA for content element classes
     # based on section_frame and responsive display classes
     stdWrap.innerWrap.cObject.default.20.10 >
