@@ -6,6 +6,12 @@ TCEFORM.pages {
     # Page alias
     alias.disabled = 1
 
+    # Abstract
+    abstract.disabled = 1
+
+    # Keywords meta tag
+    keywords.disabled = 1
+
     # Categories
     categories.disabled = 0
 
