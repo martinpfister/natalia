@@ -6,20 +6,27 @@ $(function() {
     // Init foundation
     $(document).foundation();
 
-    // Init placeholder for browsers not supporting placeholder attribute
+    // Init lightbox (fancybox)
+    $('.fancybox, .lightbox').fancybox();
+
+    // Init double tap menu
+    $('.top-bar-section').doubleTapMenu();
+
+    // Init toggle button(s)
+    // Example implementation
+    //$('.hamburger-icon').toggler({
+    //   activeClassName:'activated',     // optional; default: 'active'
+    //   elementIdOverride:'myNavigation' // optional; default: HTML-id of element
+    //});
+
+    // Init placeholder
+    // (for browsers not supporting placeholder attribute)
     if (Modernizr.input.placeholder) {
         $('html').addClass('placeholder');
     } else {
         $('input, textarea').placeholder();
         $('html').addClass('no-placeholder');
     }
-
-    // Init toggle buttons and double tap navigations
-    $('.top-bar-section').doubleTapMenu();
-    // $('.hamburger-icon').toggler();
-
-    // Init lightbox (fancybox)
-    $('.fancybox, .lightbox').fancybox();
 
     // Init slider (slick slider)
     var slickSliderSettings = {

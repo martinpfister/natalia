@@ -7,7 +7,7 @@
  *     $('#yourelement').toggler();
  *                  or
  *     $('#yourelement').toggler({
- *          activeClassName:'yourActiveClass'
+ *          activeClassName:'yourActiveClass',
  *          elementIdOverride:'alternativeIdName'
  *      });
  *
