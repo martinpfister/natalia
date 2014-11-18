@@ -7,7 +7,16 @@ $(function() {
     $(document).foundation();
 
     // Init placeholder for browsers not supporting placeholder attribute
-    $('input, textarea').placeholder();
+    if (Modernizr.input.placeholder) {
+        $('html').addClass('placeholder');
+    } else {
+        $('input, textarea').placeholder();
+        $('html').addClass('no-placeholder');
+    }
+
+    // Init toggle buttons and double tap navigations
+    $('.top-bar-section').doubleTapMenu();
+    // $('.hamburger-icon').toggler();
 
     // Init lightbox (fancybox)
     $('.fancybox, .lightbox').fancybox();
