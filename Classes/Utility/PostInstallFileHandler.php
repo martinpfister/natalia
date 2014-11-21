@@ -100,6 +100,8 @@ class PostInstallFileHandler {
      */
     public function writeAdditionalConfiguration($newConfiguration, $configurationController) {
         global $BE_USER;
+        $fileContentLines = Array();
+
         $packageKey = $this->getPackageKey();
         $currentConfiguration = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$packageKey]);
 
@@ -110,15 +112,18 @@ class PostInstallFileHandler {
         }
         // rewrite configuration, if necessary.
         $enableCustomErrorHandler = boolval($newConfiguration['enableCustomErrorHandling']['value']);
-        if ($enableCustomErrorHandler == true && $enableCustomErrorHandler != $currentConfiguration['enableCustomErrorHandling']) {
-            $fileContentLines[] = '$GLOBALS[\'TYPO3_CONF_VARS\'][\'FE\'][\'pageNotFound_handling\'] = \'USER_FUNCTION:typo3conf/ext/' . $packageKey . '/Classes/Utility/PageNotFoundHandler.php:Staempfli\\Templatebootstrap\\Utility\\PageNotFoundHandler->pageNotFound\'';
+        if ($enableCustomErrorHandler == true) {
+            $errorHandlerReference = 'USER_FUNCTION:typo3conf/ext/' . $packageKey . '/Classes/Utility/PageNotFoundHandler.php:Staempfli\\Templatebootstrap\\Utility\\PageNotFoundHandler->pageNotFound';
+            if ($errorHandlerReference !== $GLOBALS['TYPO3_CONF_VARS']['FE']['pageNotFound_handling']) {
+                $fileContentLines[] = '$GLOBALS[\'TYPO3_CONF_VARS\'][\'FE\'][\'pageNotFound_handling\'] = \''. $errorHandlerReference .'\';';
+            }
         }
 
 
         // trustedHostsPattern
         if (boolval($newConfiguration['generateTrustedHostsPattern']['value'])) {
             $finalPattern = 'SERVER_NAME';
-            $domainsResult = $GLOBALS['TYPO3_DB']->exec_SELECTquery('*', 'sys_domain');
+            $domainsResult = $GLOBALS['TYPO3_DB']->exec_SELECTquery('*', 'sys_domain', NULL);
             if ($GLOBALS['TYPO3_DB']->sql_num_rows($domainsResult)) {
                 $domainNames = Array();
                 while($domainRecord = $GLOBALS['TYPO3_DB']->sql_fetch_assoc($domainsResult)) {
@@ -127,7 +132,7 @@ class PostInstallFileHandler {
                 $finalPattern = '^('. implode('|', $domainNames) .')$';
             }
             if ($GLOBALS['TYPO3_CONF_VARS']['SYS']['trustedHostsPattern'] !== $finalPattern) {
-                $fileContentLines[] = '$GLOBALS[\'TYPO3_CONF_VARS\'][\'SYS\'][\'trustedHostsPattern\'] = \''. $finalPattern .'\'';
+                $fileContentLines[] = '$GLOBALS[\'TYPO3_CONF_VARS\'][\'SYS\'][\'trustedHostsPattern\'] = \''. $finalPattern .'\';';
             }
         }
 
