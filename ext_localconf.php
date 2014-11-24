@@ -25,6 +25,9 @@ ExtensionManagementUtility::addUserTSConfig($userTSConfig);
 # Register constants to use package key and version in TS later
 ExtensionManagementUtility::addTypoScriptConstants('plugin.templatebootstrap.packageKey='. $_EXTKEY);
 ExtensionManagementUtility::addTypoScriptConstants('plugin.templatebootstrap.packageVersion='. ExtensionManagementUtility::getExtensionVersion($_EXTKEY));
+$revision = exec('git -C "'. ExtensionManagementUtility::extPath($_EXTKEY) .'" rev-list HEAD --reverse --max-count=1');
+ExtensionManagementUtility::addTypoScriptConstants('plugin.templatebootstrap.revision='. $revision);
+
 # Do not change this. It is used to identify which templatebootstrap version this package is originally derived from.
 ExtensionManagementUtility::addTypoScriptConstants('plugin.templatebootstrap.bootstrapPackageVersion=1.0.DEV');
 
