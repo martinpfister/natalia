@@ -29,7 +29,7 @@ $revision = exec('git -C "'. ExtensionManagementUtility::extPath($_EXTKEY) .'" r
 ExtensionManagementUtility::addTypoScriptConstants('plugin.templatebootstrap.revision='. $revision);
 
 # Do not change this. It is used to identify which templatebootstrap version this package is originally derived from.
-ExtensionManagementUtility::addTypoScriptConstants('plugin.templatebootstrap.bootstrapPackageVersion=1.0.DEV');
+ExtensionManagementUtility::addTypoScriptConstants('plugin.templatebootstrap.bootstrapPackageVersion=1.1.0');
 
 # Load constants & setup according to chosen environment
 $environment = $settings['environment'];
