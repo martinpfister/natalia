@@ -17,6 +17,41 @@
 @media #{$xxlarge-up} { }
 @media #{$xxlarge-only} { }*/
 
+
+/*********************************************
+    Compass examples
+**********************************************/
+/*
+
+.myclass {
+
+    @include box-sizing(content-box);
+
+    @include background-image(linear-gradient(to bottom right, white, #dddddd));
+    @include background-size(cover);
+
+    @include border-radius(25px);
+    @include border-top-right-radius(30px);
+    @include border-bottom-radius(40px);
+    @include border-corner-radius(bottom, right, 10px);
+
+    @include box-shadow(red 2px 2px 10px);
+
+    @include box-sizing(content-box);
+
+    @include opacity(0.1);
+
+    @include text-shadow(rgba(blue, 0.2) 1px 1px 0);
+
+    @include transition-property(width);
+    @include transition-duration(2s);
+    @include transition-timing-function(ease-in);
+    @include transition-delay(2s);
+}
+
+*/
+
+
 /*********************************************
     Header area
 **********************************************/
