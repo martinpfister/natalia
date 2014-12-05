@@ -19,7 +19,7 @@ div.csc-textpic {
 /*********************************************
     Image captions
 **********************************************/
-figcaption.csc-textpic-caption  {
+figcaption.csc-textpic-caption {
     display:block;
     padding-top:1%;
     font-size:$small-font-size;
@@ -29,8 +29,8 @@ figcaption.csc-textpic-caption  {
 /*********************************************
     Menus
 **********************************************/
-nav ul { list-style-type: none; }
-nav a { text-decoration: none; }
+nav ul { list-style-type:none; }
+nav a { text-decoration:none; }
 
 
 /*********************************************
@@ -48,8 +48,8 @@ iframe * {
 **********************************************/
 #skiplinks {
     position:absolute;
-    top:-20000px;
     z-index:1000;
+    top:-20000px;
     width:100%;
     margin:auto;
     padding:0;
@@ -64,8 +64,8 @@ iframe * {
 
         span {
             display:inline-block;
-            background:$primary-color;
             padding:7px 10px;
+            background:$primary-color;
         }
     }
     a:focus,

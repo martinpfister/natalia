@@ -56,13 +56,13 @@
     Header area
 **********************************************/
 #logo {
-    width: 100%;
-    padding: 0.5rem 0;
-    box-sizing: border-box;
-    display: block;
+    display:block;
+    box-sizing:border-box;
+    width:100%;
+    padding:0.5rem 0;
     img {
-        max-width: 100%;
-        height: auto;
+        max-width:100%;
+        height:auto;
     }
 }
 
@@ -71,7 +71,7 @@
 **********************************************/
 @media #{$medium-up} {
     nav.language {
-        float: right;
+        float:right;
     }
 }
 
@@ -79,13 +79,12 @@
     Slider
 **********************************************/
 .slide span {
+    position:absolute;
+    z-index:2;
+    top:1rem;
+    right:1rem;
     color:#fff;
-    font-weight: $font-weight-bold;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    z-index: 2;
-
+    font-weight:$font-weight-bold;
 }
 
 /*********************************************
@@ -103,9 +102,9 @@ input[type="reset"] {
     Footer
 **********************************************/
 footer.row {
-    margin-top: 1rem;
-    opacity: 0.5;
-    * { font-size: 0.8rem; }
+    margin-top:1rem;
+    opacity:0.5;
+    * { font-size:0.8rem; }
 }
 
-ul.address { list-style-type: none; }
+ul.address { list-style-type:none; }

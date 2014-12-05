@@ -1,4 +1,9 @@
 /*********************************************
+    Compass
+    See http://compass-style.org/examples/
+    for reference
+**********************************************/
+/*********************************************
     Foundation
 **********************************************/
 /* line 330, ../sass/foundation/components/_global.scss */
@@ -5017,8 +5022,8 @@ th.hide-for-touch {
 .slick-slider {
   position: relative;
   display: block;
-  box-sizing: border-box;
   -moz-box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -5033,8 +5038,8 @@ th.hide-for-touch {
 /* line 55, ../sass/slick/_slick.scss */
 .slick-list {
   position: relative;
-  overflow: hidden;
   display: block;
+  overflow: hidden;
   margin: 0;
   padding: 0;
 }
@@ -5067,15 +5072,15 @@ th.hide-for-touch {
 /* line 85, ../sass/slick/_slick.scss */
 .slick-track {
   position: relative;
-  left: 0;
-  top: 0;
   display: block;
+  top: 0;
+  left: 0;
   zoom: 1;
 }
 /* line 93, ../sass/slick/_slick.scss */
 .slick-track:before, .slick-track:after {
-  content: "";
   display: table;
+  content: "";
 }
 /* line 98, ../sass/slick/_slick.scss */
 .slick-track:after {
@@ -5088,32 +5093,32 @@ th.hide-for-touch {
 
 /* line 106, ../sass/slick/_slick.scss */
 .slick-slide {
+  display: none;
   float: left;
   height: 100%;
   min-height: 1px;
-  display: none;
 }
-/* line 110, ../sass/slick/_slick.scss */
+/* line 111, ../sass/slick/_slick.scss */
 .slick-slide img {
   display: block;
 }
-/* line 113, ../sass/slick/_slick.scss */
+/* line 114, ../sass/slick/_slick.scss */
 .slick-slide.slick-loading img {
   display: none;
 }
-/* line 119, ../sass/slick/_slick.scss */
+/* line 118, ../sass/slick/_slick.scss */
 .slick-slide.dragging img {
   pointer-events: none;
 }
-/* line 123, ../sass/slick/_slick.scss */
+/* line 122, ../sass/slick/_slick.scss */
 .slick-initialized .slick-slide {
   display: block;
 }
-/* line 127, ../sass/slick/_slick.scss */
+/* line 126, ../sass/slick/_slick.scss */
 .slick-loading .slick-slide {
   visibility: hidden;
 }
-/* line 131, ../sass/slick/_slick.scss */
+/* line 130, ../sass/slick/_slick.scss */
 .slick-vertical .slick-slide {
   display: block;
   height: auto;
@@ -5123,32 +5128,32 @@ th.hide-for-touch {
 /* Icons */
 @font-face {
   font-family: "slick";
-  src: url('/typo3conf/ext/templatebootstrap/Resources/Public/Template/fonts/slick.eot');
-  src: url('/typo3conf/ext/templatebootstrap/Resources/Public/Template/fonts/slick.eot?#iefix') format("embedded-opentype"), url('/typo3conf/ext/templatebootstrap/Resources/Public/Template/fonts/slick.woff') format("woff"), url('/typo3conf/ext/templatebootstrap/Resources/Public/Template/fonts/slick.ttf') format("truetype"), url('/typo3conf/ext/templatebootstrap/Resources/Public/Template/fonts/slick.svg#slick') format("svg");
   font-weight: normal;
   font-style: normal;
+  src: url('/typo3conf/ext/templatebootstrap/Resources/Public/Template/fonts/slick.eot');
+  src: url('/typo3conf/ext/templatebootstrap/Resources/Public/Template/fonts/slick.eot?#iefix') format("embedded-opentype"), url('/typo3conf/ext/templatebootstrap/Resources/Public/Template/fonts/slick.woff') format("woff"), url('/typo3conf/ext/templatebootstrap/Resources/Public/Template/fonts/slick.ttf') format("truetype"), url('/typo3conf/ext/templatebootstrap/Resources/Public/Template/fonts/slick.svg#slick') format("svg");
 }
 
 /* Arrows */
-/* line 155, ../sass/slick/_slick.scss */
+/* line 154, ../sass/slick/_slick.scss */
 .slick-prev,
 .slick-next {
   position: absolute;
   display: block;
-  height: 20px;
-  width: 20px;
-  line-height: 0;
-  font-size: 0;
   cursor: pointer;
-  background: transparent;
-  color: transparent;
   top: 50%;
+  width: 20px;
+  height: 20px;
   margin-top: -10px;
   padding: 0;
   border: none;
   outline: none;
+  background: transparent;
+  color: transparent;
+  font-size: 0;
+  line-height: 0;
 }
-/* line 170, ../sass/slick/_slick.scss */
+/* line 169, ../sass/slick/_slick.scss */
 .slick-prev:hover, .slick-prev:focus,
 .slick-next:hover,
 .slick-next:focus {
@@ -5156,116 +5161,116 @@ th.hide-for-touch {
   background: transparent;
   color: transparent;
 }
-/* line 174, ../sass/slick/_slick.scss */
+/* line 173, ../sass/slick/_slick.scss */
 .slick-prev:hover:before, .slick-prev:focus:before,
 .slick-next:hover:before,
 .slick-next:focus:before {
   opacity: 1;
 }
-/* line 178, ../sass/slick/_slick.scss */
+/* line 177, ../sass/slick/_slick.scss */
 .slick-prev.slick-disabled:before,
 .slick-next.slick-disabled:before {
   opacity: 0.25;
 }
 
-/* line 182, ../sass/slick/_slick.scss */
+/* line 181, ../sass/slick/_slick.scss */
 .slick-prev:before, .slick-next:before {
+  opacity: 0.75;
+  color: #008cba;
   font-family: "slick";
   font-size: 20px;
   line-height: 1;
-  color: #008cba;
-  opacity: 0.75;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 191, ../sass/slick/_slick.scss */
+/* line 190, ../sass/slick/_slick.scss */
 .slick-prev {
   left: -25px;
 }
-/* line 193, ../sass/slick/_slick.scss */
+/* line 192, ../sass/slick/_slick.scss */
 .slick-prev:before {
   content: "\2190";
 }
 
-/* line 197, ../sass/slick/_slick.scss */
+/* line 196, ../sass/slick/_slick.scss */
 .slick-next {
   right: -25px;
 }
-/* line 199, ../sass/slick/_slick.scss */
+/* line 198, ../sass/slick/_slick.scss */
 .slick-next:before {
   content: "\2192";
 }
 
 /* Dots */
-/* line 206, ../sass/slick/_slick.scss */
+/* line 205, ../sass/slick/_slick.scss */
 .slick-slider {
   margin-bottom: 30px;
 }
 
-/* line 209, ../sass/slick/_slick.scss */
+/* line 208, ../sass/slick/_slick.scss */
 .slick-dots {
   position: absolute;
-  bottom: -45px;
-  list-style: none;
   display: block;
-  text-align: center;
-  padding: 0;
+  bottom: -45px;
   width: 100%;
+  padding: 0;
+  text-align: center;
+  list-style: none;
 }
-/* line 218, ../sass/slick/_slick.scss */
+/* line 217, ../sass/slick/_slick.scss */
 .slick-dots li {
   position: relative;
   display: inline-block;
-  height: 20px;
+  cursor: pointer;
   width: 20px;
+  height: 20px;
   margin: 0 5px;
   padding: 0;
-  cursor: pointer;
 }
-/* line 227, ../sass/slick/_slick.scss */
+/* line 226, ../sass/slick/_slick.scss */
 .slick-dots li button {
-  border: 0;
-  background: transparent;
   display: block;
-  height: 20px;
-  width: 20px;
-  outline: none;
-  line-height: 0;
-  font-size: 0;
-  color: transparent;
-  padding: 5px;
   cursor: pointer;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  border: 0;
+  outline: none;
+  background: transparent;
+  color: transparent;
+  font-size: 0;
+  line-height: 0;
 }
-/* line 239, ../sass/slick/_slick.scss */
+/* line 238, ../sass/slick/_slick.scss */
 .slick-dots li button:hover, .slick-dots li button:focus {
   outline: none;
 }
-/* line 241, ../sass/slick/_slick.scss */
+/* line 240, ../sass/slick/_slick.scss */
 .slick-dots li button:hover:before, .slick-dots li button:focus:before {
   opacity: 1;
 }
-/* line 246, ../sass/slick/_slick.scss */
+/* line 245, ../sass/slick/_slick.scss */
 .slick-dots li button:before {
   position: absolute;
+  content: "\2022";
   top: 0;
   left: 0;
-  content: "\2022";
   width: 20px;
   height: 20px;
+  opacity: 0.25;
+  text-align: center;
+  color: #008cba;
   font-family: "slick";
   font-size: 10px;
   line-height: 20px;
-  text-align: center;
-  color: #008cba;
-  opacity: 0.25;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 265, ../sass/slick/_slick.scss */
+/* line 264, ../sass/slick/_slick.scss */
 .slick-dots li.slick-active button:before {
-  color: #008cba;
   opacity: 0.75;
+  color: #008cba;
 }
 
 /*********************************************
@@ -5360,8 +5365,8 @@ iframe * {
 /* line 49, ../sass/_common.scss */
 #skiplinks {
   position: absolute;
-  top: -20000px;
   z-index: 1000;
+  top: -20000px;
   width: 100%;
   margin: auto;
   padding: 0;
@@ -5378,8 +5383,8 @@ iframe * {
 /* line 65, ../sass/_common.scss */
 #skiplinks a span {
   display: inline-block;
-  background: #008cba;
   padding: 7px 10px;
+  background: #008cba;
 }
 /* line 73, ../sass/_common.scss */
 #skiplinks a:focus,
@@ -5406,22 +5411,49 @@ iframe * {
 
 @media only screen and (min-width:120.063em) { }
 @media only screen and (min-width:120.063em) and (max-width:99999999em) { }*/
-/* line 20, ../sass/_styles.scss */
-.test {
-  background: url('/typo3conf/ext/templatebootstrap/Resources/Public/Template/images/my/test/image.png');
+/*********************************************
+    Compass examples
+**********************************************/
+/*
+
+.myclass {
+
+    @include box-sizing(content-box);
+
+    @include background-image(linear-gradient(to bottom right, white, #dddddd));
+    @include background-size(cover);
+
+    @include border-radius(25px);
+    @include border-top-right-radius(30px);
+    @include border-bottom-radius(40px);
+    @include border-corner-radius(bottom, right, 10px);
+
+    @include box-shadow(red 2px 2px 10px);
+
+    @include box-sizing(content-box);
+
+    @include opacity(0.1);
+
+    @include text-shadow(rgba(blue, 0.2) 1px 1px 0);
+
+    @include transition-property(width);
+    @include transition-duration(2s);
+    @include transition-timing-function(ease-in);
+    @include transition-delay(2s);
 }
 
+*/
 /*********************************************
     Header area
 **********************************************/
-/* line 27, ../sass/_styles.scss */
+/* line 58, ../sass/_styles.scss */
 #logo {
+  display: block;
+  box-sizing: border-box;
   width: 100%;
   padding: 0.5rem 0;
-  box-sizing: border-box;
-  display: block;
 }
-/* line 32, ../sass/_styles.scss */
+/* line 63, ../sass/_styles.scss */
 #logo img {
   max-width: 100%;
   height: auto;
@@ -5431,7 +5463,7 @@ iframe * {
     Menus
 **********************************************/
 @media only screen and (min-width: 40.063em) {
-  /* line 42, ../sass/_styles.scss */
+  /* line 73, ../sass/_styles.scss */
   nav.language {
     float: right;
   }
@@ -5439,14 +5471,14 @@ iframe * {
 /*********************************************
     Slider
 **********************************************/
-/* line 50, ../sass/_styles.scss */
+/* line 81, ../sass/_styles.scss */
 .slide span {
-  color: #fff;
-  font-weight: bold;
   position: absolute;
+  z-index: 2;
   top: 1rem;
   right: 1rem;
-  z-index: 2;
+  color: #fff;
+  font-weight: bold;
 }
 
 /*********************************************
@@ -5455,17 +5487,17 @@ iframe * {
 /*********************************************
     Footer
 **********************************************/
-/* line 74, ../sass/_styles.scss */
+/* line 104, ../sass/_styles.scss */
 footer.row {
   margin-top: 1rem;
   opacity: 0.5;
 }
-/* line 77, ../sass/_styles.scss */
+/* line 107, ../sass/_styles.scss */
 footer.row * {
   font-size: 0.8rem;
 }
 
-/* line 80, ../sass/_styles.scss */
+/* line 110, ../sass/_styles.scss */
 ul.address {
   list-style-type: none;
 }
