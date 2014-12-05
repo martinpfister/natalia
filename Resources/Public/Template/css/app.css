@@ -3128,7 +3128,7 @@ table tr td {
 /* line 103, ../sass/foundation/components/_top-bar.scss */
 meta.foundation-mq-topbar {
   font-family: "/only screen and (min-width:40.063em)/";
-  width: 40.063em;
+  width: "40.063em";
 }
 
 /* Wrapped around .top-bar to contain to grid width */
@@ -5406,17 +5406,22 @@ iframe * {
 
 @media only screen and (min-width:120.063em) { }
 @media only screen and (min-width:120.063em) and (max-width:99999999em) { }*/
+/* line 20, ../sass/_styles.scss */
+.test {
+  background: url('/typo3conf/ext/templatebootstrap/Resources/Public/Template/images/my/test/image.png');
+}
+
 /*********************************************
     Header area
 **********************************************/
-/* line 23, ../sass/_styles.scss */
+/* line 27, ../sass/_styles.scss */
 #logo {
   width: 100%;
   padding: 0.5rem 0;
   box-sizing: border-box;
   display: block;
 }
-/* line 28, ../sass/_styles.scss */
+/* line 32, ../sass/_styles.scss */
 #logo img {
   max-width: 100%;
   height: auto;
@@ -5426,7 +5431,7 @@ iframe * {
     Menus
 **********************************************/
 @media only screen and (min-width: 40.063em) {
-  /* line 38, ../sass/_styles.scss */
+  /* line 42, ../sass/_styles.scss */
   nav.language {
     float: right;
   }
@@ -5434,7 +5439,7 @@ iframe * {
 /*********************************************
     Slider
 **********************************************/
-/* line 46, ../sass/_styles.scss */
+/* line 50, ../sass/_styles.scss */
 .slide span {
   color: #fff;
   font-weight: bold;
@@ -5450,17 +5455,17 @@ iframe * {
 /*********************************************
     Footer
 **********************************************/
-/* line 70, ../sass/_styles.scss */
+/* line 74, ../sass/_styles.scss */
 footer.row {
   margin-top: 1rem;
   opacity: 0.5;
 }
-/* line 73, ../sass/_styles.scss */
+/* line 77, ../sass/_styles.scss */
 footer.row * {
   font-size: 0.8rem;
 }
 
-/* line 76, ../sass/_styles.scss */
+/* line 80, ../sass/_styles.scss */
 ul.address {
   list-style-type: none;
 }
