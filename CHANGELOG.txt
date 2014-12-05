@@ -1,0 +1,5 @@
+V 1.2.0
+[BREAKING]  XXX
+[FEATURE]   Refactored whole grunt task structure. Implemented csscomb & imagemin.
+[FEATURE]   Included compass per default. Examples available in _styles.scss
+[DELETED]   Deleted unused font awesome files.
