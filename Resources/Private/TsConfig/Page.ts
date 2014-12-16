@@ -112,6 +112,15 @@ mod.wizards.newContentElement.wizardItems.common.elements {
     image.tt_content_defValues.imageorient = 2
 }
 
+
+#-------------------------------------------------------------------------------
+#  Default language
+#-------------------------------------------------------------------------------
+mod.SHARED {
+    defaultLanguageLabel = Deutsch
+    defaultLanguageFlag = ch.gif
+}
+
 #-------------------------------------------------------------------------------
 #  Permissions for new pages
 #-------------------------------------------------------------------------------
