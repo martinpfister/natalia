@@ -16,7 +16,8 @@ module.exports = function(grunt) {
         sass: {
             main: {
                 options: {
-                    sourcemap: true
+                    sourcemap: true,
+                    unixNewlines: true
                 },
                 files: {
                     'css/app.css': 'sass/app.scss'
@@ -29,11 +30,13 @@ module.exports = function(grunt) {
         compass: {
             main: {
                 options: {
+                    raw:'unixNewlines =:true\n',
                     force: true,
                     relativeAssets: false,
                     httpPath: '/typo3conf/ext/'+ packageKey +'/Resources/Public/Template/',
                     imagesDir:'images',
                     fontsDir:'fonts',
+                    sassDir:'sass',
                     cssDir:'css'
                 }
             }
