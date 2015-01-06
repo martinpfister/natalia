@@ -1,7 +1,13 @@
 # Change Log
 All notable changes to this project will be documented in this file. Syntax according to http://keepachangelog.com/
 
-## [1.2.0] - 2015-01-05
+## [1.2.0] - [unreleased]
+### Added
+### Fixed
+### Updated
+### Removed
+
+## [1.1.0] - 2015-01-05
 ### Added
 - Configure default language label (DE) and flag (CH) for TYPO3 backend.
 - Enable frontend admin panel for local environments.
