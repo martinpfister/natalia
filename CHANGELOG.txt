@@ -1,4 +1,16 @@
-V 1.2.0
-[ADDED]     Refactored whole grunt task structure. Implemented csscomb & imagemin.
-[ADDED]     Included compass per default. Examples available in _styles.scss
-[REMOVED]   Deleted unused font awesome files.
+# Change Log
+All notable changes to this project will be documented in this file. Syntax according to http://keepachangelog.com/
+
+## [1.1.0] - 2015-01-05
+### Added
+- Configure default language label (DE) and flag (CH) for TYPO3 backend.
+- Enable frontend admin panel for local environments.
+- Refactor whole grunt task structure. Implemented csscomb & imagemin.
+### Fixed
+- Replace normalize.css with most recent library (wrongfully contained HTML content).
+- Grunt task "watch" was broken as "scssChange" has been removed. Reroute to "buildCSS".
+### Updated
+- Include compass in scss per default. Examples available in _styles.scss
+- Update package.json to use Compass 1.0.x.
+### Removed
+- Delete unused font awesome files.
