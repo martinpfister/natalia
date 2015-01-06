@@ -85,7 +85,7 @@ module.exports = function(grunt) {
             },
             sass: {
                 files: 'sass/**/*.scss',
-                tasks: ['scssChange'],
+                tasks: ['buildCSS'],
                 options: {livereload:true}
             },
             images: {
