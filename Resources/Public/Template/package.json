@@ -7,6 +7,5 @@
         "grunt-contrib-sass": "0.7.x",
         "grunt-contrib-watch": "0.6.x",
         "grunt-contrib-imagemin": "0.7.x",
-        "grunt-csscomb": "3.0.x"
     }
 }
