@@ -11,6 +11,7 @@ lib.skiplinks {
         typolink {
             title = [ALT + 0]
             parameter = {$site.pageUids.home}
+            ATagParams = accesskey="0"
         }
     }
     20 < .10
@@ -19,6 +20,7 @@ lib.skiplinks {
         typolink {
             title = [ALT + 1]
             parameter = {$site.pageUids.navigation}
+            ATagParams = accesskey="1"
         }
     }
     30 < .10
@@ -27,6 +29,7 @@ lib.skiplinks {
         typolink {
             title = [ALT + 2]
             parameter = {$site.pageUids.content}
+            ATagParams = accesskey="2"
         }
     }
     40 < .10
@@ -35,6 +38,7 @@ lib.skiplinks {
         typolink {
             title = [ALT + 3]
             parameter = {$site.pageUids.contact}
+            ATagParams = accesskey="3"
         }
     }
 }
@@ -48,6 +52,7 @@ lib.skiplinks {
         typolink {
             title = [ALT + 4]
             parameter = {$site.pageUids.sitemap}
+            ATagParams = accesskey="4"
         }
     }
 [global]
@@ -61,6 +66,7 @@ lib.skiplinks {
         typolink {
             title = [ALT + 5]
             parameter = {$site.pageUids.search}
+            ATagParams = accesskey="5"
         }
     }
 [global]
@@ -86,6 +92,7 @@ temp.skiplink_dynamic {
         typolink {
             title = [ALT + 6]
             parameter = {$site.pageUids.optionalSkiplink1}
+            ATagParams = accesskey="6"
         }
     }
 [global]
@@ -96,6 +103,7 @@ temp.skiplink_dynamic {
         typolink {
             title = [ALT + 7]
             parameter = {$site.pageUids.optionalSkiplink2}
+            ATagParams = accesskey="7"
         }
     }
 [global]
@@ -106,6 +114,7 @@ temp.skiplink_dynamic {
         typolink {
             title = [ALT + 8]
             parameter = {$site.pageUids.optionalSkiplink3}
+            ATagParams = accesskey="8"
         }
     }
 [global]
@@ -116,6 +125,7 @@ temp.skiplink_dynamic {
         typolink {
             title = [ALT + 9]
             parameter = {$site.pageUids.optionalSkiplink4}
+            ATagParams = accesskey="9"
         }
     }
 [global]
