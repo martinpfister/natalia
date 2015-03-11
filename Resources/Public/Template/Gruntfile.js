@@ -64,23 +64,6 @@ module.exports = function(grunt) {
             }
         },
 
-
-
-        // Re-structure scss files
-        // Only on current level & 1 level down!
-        csscomb: {
-            combSCSS: {
-                expand: true,
-                cwd: 'sass/',
-                src: ['_*.scss', '*/_*.scss'],
-                dest: 'sass/',
-                options: {
-                    config: 'grunt-csscomb.options.json'
-                }
-            }
-        },
-
-
         // File change watcher
         watch: {
             grunt: {
@@ -107,16 +90,14 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
-    grunt.loadNpmTasks('grunt-csscomb');
 
     // Define tasks
     grunt.registerTask('buildCSSWithCompass', ['compass']);
     grunt.registerTask('buildCSSWithoutCompass', ['sass']);
     grunt.registerTask('buildCSS', ['buildCSSWithCompass']);
     grunt.registerTask('compressImageAssets', ['imagemin:imageAssets']);
-    grunt.registerTask('combSCSS', ['csscomb:combSCSS']);
 
     // Define default task
-    grunt.registerTask('default', ['combSCSS', 'buildCSS', 'compressImageAssets', 'watch']);
+    grunt.registerTask('default', ['buildCSS', 'compressImageAssets', 'watch']);
 
 }
