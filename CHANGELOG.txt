@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file. Syntax acco
 ### Added
 - Add missing attribute "accesskey" to skiplinks.
 - Add TYPO3SEARCH_begin and TYPO3SEARCH_end around content section of default layout.
+- fixed typos in README.txt
 
 ### Fixed
 - Get package revision version in FE mode only as it may throw errors when localconf is loaded via CLI.
