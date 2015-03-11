@@ -1,3 +1,4 @@
+.idea/
 /Resources/Public/Template/.sass-cache
 /Resources/Public/Template/node_modules
 /Resources/Private/TypoScript/constants-local.ts
