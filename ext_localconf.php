@@ -33,7 +33,7 @@ if (TYPO3_MODE === 'FE') {
 ExtensionManagementUtility::addTypoScriptConstants('plugin.templatebootstrap.revision='. $revision);
 
 # Do not change this. It is used to identify which templatebootstrap version this package is originally derived from.
-ExtensionManagementUtility::addTypoScriptConstants('plugin.templatebootstrap.bootstrapPackageVersion=1.2.0-DEV');
+ExtensionManagementUtility::addTypoScriptConstants('plugin.templatebootstrap.bootstrapPackageVersion=1.2.0');
 
 # Load constants & setup according to chosen environment
 $environment = $settings['environment'];

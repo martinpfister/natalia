@@ -1,6 +1,6 @@
 {
     "name": "Templatebootstrap",
-    "version": "1.2.0-DEV",
+    "version": "1.2.0",
     "devDependencies": {
         "grunt": "0.4.x",
         "grunt-contrib-compass": "1.0.x",
