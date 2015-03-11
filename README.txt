@@ -27,4 +27,4 @@
     => Choose option "Include before all static templates if root flag is set"
 
 - Import default usergroup & filemount, if desired.
-- Start developing.
+- Have fun!
