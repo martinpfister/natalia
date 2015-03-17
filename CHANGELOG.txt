@@ -1,7 +1,7 @@
 # Change Log
 All notable changes to this project will be documented in this file. Syntax according to http://keepachangelog.com/
 
-## [1.2.0] - [unreleased]
+## [1.2.0]
 ### Added
 - Add missing attribute "accesskey" to skiplinks.
 - Add TYPO3SEARCH_begin and TYPO3SEARCH_end around content section of default layout.
