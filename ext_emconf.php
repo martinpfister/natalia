@@ -9,7 +9,7 @@
 ########################################################################
 
 $EM_CONF[$_EXTKEY] = array(
-    'title' => 'Website template bootstrap',
+    'title' => 'nataliaganzoni.ausruf.ch',
     'description' => '',
     'category' => 'fe',
     'shy' => 0,

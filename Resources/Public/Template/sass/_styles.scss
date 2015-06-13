@@ -108,3 +108,333 @@ footer.row {
 }
 
 ul.address { list-style-type:none; }
+
+
+
+
+
+/*
+ www.nataliaganzoni.info
+ author: mail@martinpfister.info
+*/
+
+/*
+ ####################################
+ Header
+ ####################################*/
+header {
+  float: left;
+}
+header hgroup {
+  padding: 40px 0 20px;
+  border-top: 2px solid #222;
+  width: 220px;
+  background: #fff;
+}
+
+header a:hover,
+header a:active {
+  color: #222;
+}
+
+/*
+ ####################################
+ Navigation
+ ####################################*/
+
+nav {
+  float: left;
+  width: 520px;
+  border-top: 2px solid #222;
+  padding: 60px 0 20px;
+  background: #fff;
+  margin: 0 0 15px 15px;
+}
+nav ul li {
+  display: inline-block;
+  margin: 10px 5px 0 0;
+}
+nav ul ul {
+  position: absolute;
+  visibility: hidden;
+  padding: 3px 0 12px 0;
+}
+nav ul ul li {
+  background: #fff;
+}
+nav a:link,
+nav  a:visited {
+  color: #222;
+  font-family: 'Droid Serif', arial, serif;
+  font-size:12px;
+  font-weight:bold;
+  text-decoration:none;
+  padding: 5px;
+  background: #fff;
+}
+nav a:hover,
+nav a:active {
+  background: #222;
+  color: #fff;
+}
+
+/*
+ ####################################
+ Content
+ ####################################*/
+
+#content {
+  clear: left;
+  margin: 15px 0 0 235px;
+  background: #fff;
+  position: relative;
+}
+#content .html-element,
+#content .text-element {
+  padding: 15px;
+}
+ h1 {
+  margin: 5px;
+  font-size: 22px;
+  padding-top: 10px;
+}
+ div.csc-textpic-center {
+  margin: 0;
+}
+ div.csc-textpic-text {
+  position: relative;
+  top: -57px;
+}
+ div.csc-textpic-text p {
+  background: white;
+  display: inline;
+  padding: 5px;
+  padding-left: 7px;
+  margin: 0;
+}
+
+/* Seite: Startseite */
+#c48 {
+  position: relative;
+  width: 520px;
+  height: 520px;
+  top: -535px;
+}
+#c48 h1 {
+  color: #fff;
+}
+#c48 span {
+  padding:5px 0;
+  display: inline;
+  margin: 1px;
+  line-height: 28px;
+  color: #fff;
+  text-shadow:1px 1px 0px #14130F;
+}
+/* h2 über bilder */
+
+#c54 h2, #c52 h2, #c51 h2, #c49 h2 {
+  padding: 5px;
+  margin: 0;
+  background: #fff;
+  display: inline;
+}
+
+/* Seite: Person */
+#c54 {
+  top: -42px;
+}
+
+#c54 article {
+  margin: 0 0 20px;
+}
+#c54 article dl {
+  margin: 6px;
+}
+#c54 article dt{
+  font-style: italic;
+  padding: 3px 0;
+}
+#c54 article dd {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+/* Seite: Links */
+#c52 {top: -25px;}
+#c52 ul {
+  margin: 0 0 20px;
+}
+#c52 ul li {
+  background: #fff;
+  padding: 5px;
+  list-style-type: none;
+}
+#c52 ul  li a:link , #c52 ul  li a:visited{
+  padding: 5px;
+  padding-right: 17px;
+  color: #000;
+  display: block;
+  text-decoration: underline;
+  background: rgba(255,255,255, 0.9);
+
+}
+#c52 ul  li a:hover , #c52 ul  li a:active {
+  background: url(../images/newwin.gif) no-repeat left 5px;
+  padding: 5px;
+  color: #999;
+  text-decoration: underline;
+}
+
+/* Seite: Kontakt */
+#c51 {top: -25px;}
+#c51 p {
+  margin: 20px 5px 0;
+}
+#c49 {
+  top: -435px;
+}
+
+#c49 form {
+  padding: 5px;
+  margin: 15px 5px 0 5px;
+}
+#c49 form div {
+  width: 220px;
+  float: left;
+}
+#c49 form div:first-child {
+  width: 270px;
+}
+#c49 form label {
+  display: inline;
+  text-shadow:1px 1px 0px #000;
+  font-size: 12px;
+  padding: 4px;
+  color: #fff;
+  background: rgba(0,0,0,0.5);
+  letter-spacing: 0.1em;
+}
+#c49 form textarea {
+  height: 260px;
+  width: 243px;
+}
+#c49 form textarea, #c49 form input {
+  margin: 3px;
+  background: rgba(255,255,255,0.5);
+  border: 2px solid rgba(255,255,255,0.3);
+}
+#c49 form input  {
+  width: 200px;
+  padding: 5px;
+  margin-bottom: 12px;
+}
+#c49 form input.mf-submit {
+  background: rgba(255,255,255,0.9);
+  border: 2px solid rgba(255,255,255,0.9);
+  margin-top: 71px;
+  padding: 3px;
+}
+#c49 form textarea:focus, #c49 form input:focus {
+  background: rgba(255,255,255,0.9);
+  border: 2px solid rgba(255,255,255,0.9);
+}
+
+/*
+ ####################################
+ Galleria
+ ####################################*/
+/* gross */
+div#content #c61 div.galleria-container {
+  background: #fff url(../images/bg_s_galleria.jpg);
+}
+/* klein */
+div#content #c67 div.galleria-container {
+  background: #fff url(../images/bg_k_galleria.jpg);
+}
+div#content div.galleria-images img:hover {
+  cursor: pointer;
+}
+
+div.galleria-lightbox-content {
+  left: 2px;
+  top: 2px;
+  bottom: 2px;
+  right: 2px;
+}
+div.galleria-lightbox-prev {
+  left: 12px;
+}
+div.galleria-lightbox-next {
+  right: 12px;
+}
+div#content div.galleria-container
+div#content div.galleria-container .galleria-image-nav-left, div#content div.galleria-container .galleria-image-nav-right {
+  opacity: 0.9;
+}
+
+/*
+ www.nataliaganzoni.info
+ author: mail@martinpfister.info
+*/
+
+/*
+ ####################################
+ SITE
+ ####################################*/
+
+body {
+  font: 12px/16px 'Droid Serif', Arial, serif;
+  margin: 0 0 0 15px;
+  width: 755px;
+  background: #f4f4f4 url(../images/bg_nat.jpg) repeat;
+}
+
+/*html, body, #wrapper {height: 100%;}
+body > #wrap {height: auto; min-height: 100%;}*/
+
+
+/*
+ ####################################
+ TYPO & BlOCK ELEMENTS
+ ####################################*/
+h1, h2, h3 {
+  font-weight: normal;
+  letter-spacing:0.05em;
+  margin-left: 5px;
+}
+h1 {
+  font-size: 32px;
+  line-height: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size:2.0em;
+}
+
+h3 {
+  font-size:1.7em;
+}
+
+strong {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
+}
+
+label {cursor: pointer;}
+input, textarea {text-align: left;}
+
+/* Links */
+a:link, a:visited {
+  text-decoration: none;
+}
+a:hover, a:active, a:focus {
+  text-decoration: underline;
+}
+
+p {
+  margin-left: 5px;
+}

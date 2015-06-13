@@ -9,12 +9,12 @@
 #    Company constants
 # **********************************************************
 company {
-    name = Muster AG
-    street = Musterstrasse 44
+    name = natalia ganzoni
+    street = 44
     pobox =
-    city = 9999 Musterhausen
+    city = 9999
     phone = 099 999 99 99
-    email = muster@musterag.com
+    email = natalia.ganzoni@gmail.com
 }
 
 
@@ -23,7 +23,7 @@ company {
 # **********************************************************
 site {
 
-    url = http://www.site.com
+    url = http://nataliaganzoni.ausruf.ch
 
     enableRealURL = 1
     enableSocialMediaMetaTags = 1
