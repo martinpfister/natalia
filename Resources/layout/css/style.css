@@ -1,0 +1,76 @@
+/*
+ www.nataliaganzoni.info 
+ author: mail@martinpfister.info 
+*/
+
+
+/*
+ ####################################
+ GLOBAL RESET
+ ####################################*/
+@import url("reset.css");
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+	display:block;
+}
+
+/*
+ ####################################
+ SITE
+ ####################################*/
+
+body {
+	font: 12px/16px 'Droid Serif', Arial, serif;
+ 	margin: 0 0 0 15px;
+	width: 755px;
+	background: #f4f4f4 url(../images/bg_nat.jpg) repeat;
+}
+
+/*html, body, #wrapper {height: 100%;}
+body > #wrap {height: auto; min-height: 100%;}*/
+
+
+/*
+ ####################################
+ TYPO & BlOCK ELEMENTS
+ ####################################*/	
+h1, h2, h3 {
+	font-weight: normal;
+	letter-spacing:0.05em;
+	margin-left: 5px;
+}
+h1 {
+	font-size: 32px;
+	line-height: 28px;
+	color: #000;
+}
+
+h2 {
+	font-size:2.0em;
+}
+
+h3 {
+	font-size:1.7em;
+}
+
+strong {
+	font-weight: bold;
+}
+em {
+	font-style: italic;
+}
+
+label {cursor: pointer;}
+input, textarea {text-align: left;}
+
+/* Links */
+a:link, a:visited { 
+	text-decoration: none;
+}
+a:hover, a:active, a:focus {
+	text-decoration: underline;
+}
+
+p {
+	margin-left: 5px;
+}
